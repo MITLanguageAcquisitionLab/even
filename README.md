@@ -1,6 +1,6 @@
 # Scalar inferences in the acquisition of *even*
 
-This is a repository for data and code from the studies described in *Scalar inferences in the acqusition of *even.
+This is a repository for data and code from the studies described in *Scalar inferences in the acqusition of* even.
 
 This repository is organized into two folders, `data/`, which contains the raw data used in the analysis, and `code/' which contains R code which imports and serializes that data, and also runs statistical models and generates figures.
 

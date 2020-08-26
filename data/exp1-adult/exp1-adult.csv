@@ -1,0 +1,885 @@
+timeReceived,md5Hash,WorkerId,age,sex,english,comments,trialN,label,item,controller,question,answer,correct,responseTime,controller.1,request,justification
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6950,,,
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10002,VBox,FSN_justification,because he is upset
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6243,VBox,TWN_justification,it implies he is the biggest and strongest 
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10000,VBox,TRP_justification,it implies he is the smallest 
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,1528,VBox,FMP_justification,because he is wearing a yellow hat. 
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,because the cup is the smallest
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5964,VBox,TCP_justification,he has the biggest basket
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,7618,VBox,FSP_justification,he is the medium
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,6716,VBox,TFN_justification,it implies he is the smallest
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,2514,VBox,TWP_justification,it implies the smallest could lift the pumpkin
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,1136,VBox,FMN_justification,because thats the only one that didnt match
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,1097,VBox,TRN_justification,because the largest couldnt reach the book
+1525249242,5.55556E+31,A320BT7PLIQVZT,26,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,2931,VBox,TFP_justification,it implies the largest could fit the socks 
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,6744,VBox,TRN_justification,tallest
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,9999,VBox,FMN_justification,Pink shell with green bucket (took me a second to see that one)
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,6752,VBox,TWP_justification,he is the smallest and weakest
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,5888,VBox,TFN_justification,She is the smallest so should fit.
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,Because it is in the middle
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5963,VBox,TFP_justification,He has the biggest feet and is unlikeliest to fit
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10006,VBox,TCN_justification,Perhaps because it is the smallest (not sure on this one).
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,9862,VBox,FSP_justification,It is the medium sized kangaroo.
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4546,VBox,TRP_justification,He is the shortest bear and has the hardest time getting to one.
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,15,neg,5,VBox,Who is Henrietta?,1,0,5055,VBox,TWN_justification,My mistake I should have said 3. Because it is the biggest and strongest and should be the most able to lift a ball.
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7102,VBox,FMP_justification,He has a yellow party hat that matches the yellow chair.
+1525227631,cfeef0683ca62f92f79ce771fcae87a8,A3LT7W355XOAKF,61,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,4806,VBox,TCP_justification,He is smallest and most likely to not be able to grab much and fill it.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,5890,,,
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,6322,VBox,TCP_justification,He has a large basket which would be difficult to fill completely.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4742,VBox,TCN_justification,Frida has a small cup%2C so it should be easy to fill. The fact that she didn't means the task was difficult in some way.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,The yellow hat will only fit turtle #2 properly.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4726,VBox,TRP_justification,Benny is short%2C so it will be difficult for him to reach an apple in the tree.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3270,VBox,TFN_justification,The hole is very small%2C so even the smallest mouse cannot fit.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,4732,VBox,FSP_justification,I take it back. Joey is probably #1 and she is expressing surprise that she wrapped up the wrong backpack for him.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5124,VBox,TFP_justification,The socks were all one-size - small. So it would be surprising for panda #3 to fit into a pair%2C but he did.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4854,VBox,TWN_justification,#3 bunny is the largest and presumably the strongest. The bowling balls were so heavy%2C even the biggest%2C strongest bunny couldn't pick them up.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7534,VBox,FMP_justification,Monkey #2 is wearing a yellow hat
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5902,VBox,TWP_justification,Pumpkins are heavy. It would be surprising for the smallest elephant to pick one up.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3358,VBox,TRN_justification,The books are on a high shelf. It is surprising that the longest/tallest caterpillar #3 can't reach them.
+1525226697,f0a0fa4cbea9c6f2494dbde2da897a23,A2LC2DS8OH7NCA,42,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5722,VBox,FMN_justification,The pink shell does not match the green bucket%2C therefore #2 is Carl.
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,11,practice,1,VBox,Who is Donny?,2,1,4745,,,
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,15,neg,5,VBox,Who is Henrietta?,3,1,4552,VBox,TWN_justification,She couldn't pick up the ball
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,23,pos,13,VBox,Who is Sammy?,1,0,8223,VBox,TCP_justification,Because it says even%2C like they are surprised because he's a child
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,14,fill,4,VBox,Who is Carl?,2,1,5078,VBox,FMN_justification,The shell is a different color than the bucket
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,16,neg,6,VBox,Who is Frida?,3,0,5060,VBox,TCN_justification,Because he's the biggest/oldest and couldn't complete the task
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,20,pos,10,VBox,Who is Benny?,1,1,7046,VBox,TRP_justification,Because he is the smallest and least likely the pick an apple
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,He has the medium backpack
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,12,neg,2,VBox,Who is Mary?,1,1,2883,VBox,TFN_justification,She is the smallest and still could not fit
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,19,pos,9,VBox,Who is Franky?,3,1,3064,VBox,TFP_justification,HE is the biggest and still got into the socks
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,18,fill,8,VBox,Who is Marcus?,2,1,4075,VBox,FMP_justification,HE has on the yellow hat
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,13,neg,3,VBox,Who is Jessiepillar?,3,1,3169,VBox,TRN_justification,He is the biggest and still could not reach a book
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,22,pos,12,VBox,Who is Rufus?,1,1,2419,VBox,TWP_justification,He is the smallest and still lifted a pumpkin
+1525247367,23060fe77470f751aac359f0ca05dc4a,A3GWEBM7DX4L0I,29,male,yes,Thank you,17,fill,7,VBox,Who is Millie?,2,1,5167,VBox,FSN_justification,She is the medium size turtle so she gets the medium sized yellow hat
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,9369,,,
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6757,VBox,TWN_justification,"Because it implies that ""Even Henrietta wasn't able to do it"" which means she's probably the biggest and strongest"
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5455,VBox,TRP_justification,"It says ""Even Benny"" was able to do it%2C so he'd have the most difficulty because of his size"
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,9999,VBox,FSP_justification,Because it's the medium backpack for the middle kangaroo
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4851,VBox,TRN_justification,Implies that even she couldn't reach it and she's the tallest
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,5146,VBox,TCP_justification,Implies that he was able to do it besides his size limitations
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5912,VBox,FMP_justification,Because he's wearing a yellow hat
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,12,neg,2,VBox,Who is Mary?,NULL,NULL,10996,VBox,TFN_justification,Because she's the smallest
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,19,pos,9,VBox,Who is Franky?,1,0,5229,VBox,TFP_justification,He's the smallest but they're all the same size socks
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,8204,VBox,FSN_justification,It's the only hat that isn't purple and she's the middle turtle
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,16,neg,6,VBox,Who is Frida?,2,0,6610,VBox,TCN_justification,Just a random guess
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4326,VBox,TWP_justification,Smallest but even he was able to do it
+1525213341,e0b9cfeb9b1d42136aeb16f72bc699c7,A20Z5O57UDPFLX,24,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,7220,VBox,FMN_justification,He had a green bucket but a pink shell
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10004,,,
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10002,VBox,FSN_justification,Millie is 2 because she is medium sized.
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5884,VBox,TWP_justification,Because he is the smallest
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6773,VBox,TWN_justification,Because she's the largest bunny
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,9899,VBox,FSP_justification,Because Joey is medium sized
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,6284,VBox,TCP_justification,He has the biggest basket%2C so it would take longer to fill.
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,5471,VBox,TFN_justification,She's the smallest one%2C so if she can't fit%2C none of them should.
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5784,VBox,FMN_justification,He has a different colored shell than his bucket
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,6377,VBox,TRP_justification,Benny is the shortest
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,7209,VBox,TCN_justification,Because Frida has to have the smallest cup for them to be surprised that it's not filled.
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6765,VBox,FMP_justification,Because he has a yellow hat
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,4669,VBox,TFP_justification,He's the largest one and would have the biggest feet to fit the socks on.
+1525212443,db97e6106b60c0e2e1c5b882f2bb6671,A1K68SWXO91HL9,29,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5468,VBox,TRN_justification,Because she's the longest one and should be able to reach a book before the rest.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,9473,,,
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10000,VBox,TFP_justification,I chose 3. He is the biggest Panda%2C and the socks were able to fit him.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4152,VBox,TRN_justification,Even if he was the tallest%2C #3 wasn't able to reach for the book. Which makes him likely that it's Jessiepillar.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6568,VBox,FMN_justification,2 is the only crab that didn't match the shell with the bucket.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4402,VBox,TRP_justification,Benny is the smallest bear%2C yet he was able to reach the apple. He must be Benny.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,6848,VBox,TCN_justification,1 had the smallest cup. The fact that even 1 wasn't able to fill the cup means that it is Frida.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6711,VBox,FMP_justification,Monkey 2 has the same yellow hat as the chair. It must be Marcus.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4956,VBox,TCP_justification,Squirrel 3 had the biggest basket%2C which makes him more likely to be Sammy.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,5606,VBox,TFN_justification,Mouse 1 is the smallest one of the 3%2C and was not able to fit into the hole. She must be Mary.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,2 is Millie because it's the only one that got a different color.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4360,VBox,TWP_justification,Elephant 1 is the smallest(and arguably the weakest) and was still able to lift the pumpkin. He must be Rufus. 
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5341,VBox,TWN_justification,Bunny 3 is the biggest(perhaps even strongest) of the bunnies in the picture and was unable to pick up the ball. She must be Henrietta.
+1525227365,7fa23538caf892141727837144b2727e,A1Y9VA9FKJLS5K,30,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7193,VBox,FSP_justification,"Kangaroo 2 is the one that also looks ""medium"" sized%2C and is appropriately suited for the selected backpack. He must be Joey."
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,11,practice,1,VBox,Who is Donny?,2,1,7915,,,
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,22,pos,12,VBox,Who is Rufus?,1,1,8454,VBox,TWP_justification,Even rufus was able to lift indicates the smallest
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,18,fill,8,VBox,Who is Marcus?,2,1,9154,VBox,FMP_justification,wearing yellow hat
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,16,neg,6,VBox,Who is Frida?,NULL,NULL,10010,VBox,TCN_justification,I had to guess
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,20,pos,10,VBox,Who is Benny?,1,1,5693,VBox,TRP_justification,He was the smallest
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,14,fill,4,VBox,Who is Carl?,NULL,NULL,10000,VBox,FMN_justification,Did not match bucket
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,12,neg,2,VBox,Who is Mary?,3,0,5181,VBox,TFN_justification,Marys the biggest
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,23,pos,13,VBox,Who is Sammy?,1,0,6548,VBox,TCP_justification,Most acorns on floor
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,Had to guess
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,15,neg,5,VBox,Who is Henrietta?,3,1,6759,VBox,TWN_justification,Looked to be the biggest and strongest
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,19,pos,9,VBox,Who is Franky?,3,1,7744,VBox,TFP_justification,frankys the biggest
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,21,fill,11,VBox,Who is Joey?,2,1,7440,VBox,FSP_justification,had to guess
+1525239554,0a265682ecd6b7ee103efd6e5d224d74,A2OO4PG3LBLP5I,30,male,yes,enjoyed,13,neg,3,VBox,Who is Jessiepillar?,3,1,6372,VBox,TRN_justification,Jess was the tallest
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6906,,,
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,8075,VBox,TWN_justification,I guessed%2C looks like all of them couldn't pick it up so  Iwas not able to tell who henrietta was
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,8552,VBox,TWP_justification,Because he's the smallest and when that sentence is mentioned it implies certain expectations of a certain character based on his size
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,number 2 is joey because he is medium sized
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,6542,VBox,TCN_justification,I guessed%2C i dont know 
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,4964,VBox,TFP_justification,because hes the biggest wearing the smallest socks
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,6474,VBox,FSN_justification,because she is the medium sized turtle getting the medium sized hat which is yellow
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4639,VBox,TFN_justification,She's the smallest
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10000,VBox,TCP_justification,because sammy is the smallest
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5016,VBox,FMN_justification,because his shell and bucket are different colors
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4267,VBox,TRN_justification,Because that caterpillar is the tallest and was still too short to reach it
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10001,VBox,TRP_justification,number 1 is benny because he is short and still able to reach it
+1525223188,e41ac459217d7c4c15b707c104951409,AOKTAHY4F4J2B,27,male,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10001,VBox,FMP_justification,number 2 is marcus because he is wearing a hat that matches the chair
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,5214,,,
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,7994,VBox,TCN_justification,"Hers just seemed harder to fill%2C but now%2C on second thought%2C maybe frida has the tiny cup because ""even frida"" was mentioned."
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5019,VBox,TCP_justification,"Because it says 'even sammy was able to fill"" and you would say that for something larger%2C rather than smaller"
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,Turtle #2 is my pick! Because the yellow hat would fit the middle turtle%2C but she could also wear the large purple hat.
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,8033,VBox,TWN_justification,Even makes me think that even the biggest/strongest bunny was unable to pick up the bowling ball..and all the balls are the same size.
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,8523,VBox,TFP_justification,Theyr'e all the same size socks%2C and even the largest panda was able to stretch them to wear them
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5886,VBox,FMP_justification,Marcus is the only one wearing the yellow hat that matches the yellow chair
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4743,VBox,TFN_justification,"It's a small hole. ""Even"" tells me that even the smallest/tiny mouse couldn't fit into that small hole. It's no surprise the middle and large mice didn't fit. "
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,7442,VBox,TRP_justification,"Because even the tiniest bear was able to reach the apple. It's no surprise that the middle and large bears were able to. So ""even"" alerts me that the tiny one %2Cwho was thought to maybe not get one%2C was able to get one."
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,5074,VBox,FSP_justification,The packs seem to match the kangaroos by size. It would make no sense to give an oversized pack to a tiny kangaroo. So%2C Joey is medium and he gets the medium pack
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,8319,VBox,TRN_justification,even jessie wasn't alerts me that even the tallest of the caterpillars was unable to reach that tall shelf.
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5059,VBox,TWP_justification,The pumpkins are big. And even the tiniest elephant was able to pick up a pumpkin bigger than he is.
+1525246663,274d117c2c540e171335985e40b844b2,AK2C9AX5QJWUU,48,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,7256,VBox,FMN_justification,The only crab with a shell that doesn't match the bucket is the middle crab - Carl
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,11,practice,1,VBox,Who is Donny?,2,1,7669,,,
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,17,fill,7,VBox,Who is Millie?,2,1,6439,VBox,FSN_justification,Because she has the yellow hat size
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,22,pos,12,VBox,Who is Rufus?,1,1,5918,VBox,TWP_justification,Rufus is the smallest
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,12,neg,2,VBox,Who is Mary?,1,1,5378,VBox,TFN_justification,Because Mary would be the smallest
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,14,fill,4,VBox,Who is Carl?,2,1,8652,VBox,FMN_justification,Because that crab's shell and bucket didn't match%0A
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,20,pos,10,VBox,Who is Benny?,1,1,5310,VBox,TRP_justification,Because 1 is the shortest bear
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,13,neg,3,VBox,Who is Jessiepillar?,3,1,6794,VBox,TRN_justification,Because she is the tallest
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,18,fill,8,VBox,Who is Marcus?,2,1,8152,VBox,FMP_justification,because he is wearing the yellow hat%0A
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,19,pos,9,VBox,Who is Franky?,3,1,5148,VBox,TFP_justification,Because his feet are the biggest
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,1 is frida because she has the smallest cup
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,21,fill,11,VBox,Who is Joey?,2,1,5856,VBox,FSP_justification,he is the medium sized kangaroo
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,23,pos,13,VBox,Who is Sammy?,3,1,5574,VBox,TCP_justification,he has the biggest basket
+1525230646,f802ff9e61b0a9dbfc99414ba9d69385,A35EI6GDSC0EY8,45,female,yes,I had a sneezing fit and the question moved on from me. I answered it in the explanation section though. ,15,neg,5,VBox,Who is Henrietta?,3,1,6832,VBox,TWN_justification,she is the biggest
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,4093,,,
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5933,VBox,TRP_justification,he is the smallest
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10000,VBox,FMN_justification,the shell is diff color%0A
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,8943,VBox,TFN_justification,its the smallest and couldnt fit%0A
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,8108,VBox,TCP_justification,he has the largest basket
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7257,VBox,FMP_justification,he has the yellow hat%0A
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,10006,VBox,TWN_justification,it is the largest thus strongest
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3724,VBox,TWP_justification,he is the smallest/weakest
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7853,VBox,FSP_justification,he is the medium kangaroo%0A
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4015,VBox,TCN_justification,the smallest cup
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,4163,VBox,TFP_justification,the largest feet
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10002,VBox,FSN_justification,the turtle in the middle %0A
+1525243909,30c38b49ed4ae279f1aefaf6ab9fee2d,A2R9OK4M877ZCC,29,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,7857,VBox,TRN_justification,the tallest
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6810,,,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10002,VBox,TRP_justification,TALL
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,12,neg,2,VBox,Who is Mary?,2,0,6696,VBox,TFN_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10001,VBox,FMP_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10004,VBox,TFP_justification,FIT
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,7741,VBox,TWN_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,21,fill,11,VBox,Who is Joey?,3,0,2946,VBox,FSP_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10441,VBox,TCP_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,22,pos,12,VBox,Who is Rufus?,3,0,8095,VBox,TWP_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10001,VBox,TRN_justification,
+1525247661,03bba7d9d43697d74321ec47a34ecbf5,A2SSTHMYQU3ITB,69,male,yes,,14,fill,4,VBox,Who is Carl?,1,0,9253,VBox,FMN_justification,
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,8808,,,
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10000,VBox,TFP_justification,The smallest one was able to fit the socks
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6354,VBox,FMP_justification,His hat matches the chair color
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,9939,VBox,TRN_justification,This was the longest caterpillar. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,5402,VBox,TCP_justification,The smallest squirrel could get the same amount of nuts. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,7433,VBox,FMN_justification,The shell didn't match the bucket
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,This frog was the smallest. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,22,pos,12,VBox,Who is Rufus?,NULL,NULL,10992,VBox,TWP_justification,The smallest was still as strong as the others. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10997,VBox,FSN_justification,She doesn't like the yellow color
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,12,neg,2,VBox,Who is Mary?,NULL,NULL,10001,VBox,TFN_justification,She is the smallest mouse. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,20,pos,10,VBox,Who is Benny?,2,0,3836,VBox,TRP_justification,He is the biggest bear. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,1723,VBox,FSP_justification,He is the smallest. 
+1525241106,69e5e570b7a5f87790b580b6e28c37ad,A2DVJ6OMVVYTC7,29,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5875,VBox,TWN_justification,The biggest bunny wasn't the strongest. 
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,%0Aa joey is a baby kangaroo
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,23,pos,13,VBox,Who is Sammy?,3,1,8490,VBox,TCP_justification,the basket was the largest 
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,10000,VBox,TWN_justification,she is the biggest
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,14,fill,4,VBox,Who is Carl?,NULL,NULL,10000,VBox,FMN_justification,the shell and bucket are differnt colors
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,22,pos,12,VBox,Who is Rufus?,3,0,3894,VBox,TWP_justification,rufus is no. 1 the smallest was able
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,13,neg,3,VBox,Who is Jessiepillar?,1,0,5150,VBox,TRN_justification,she is the smallest
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,17,fill,7,VBox,Who is Millie?,2,1,5912,VBox,FSN_justification,it is  the odd color
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,19,pos,9,VBox,Who is Franky?,3,1,4062,VBox,TFP_justification,franky is the largest
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,16,neg,6,VBox,Who is Frida?,3,0,4746,VBox,TCN_justification,frida has the biggest cup 
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,18,fill,8,VBox,Who is Marcus?,2,1,4938,VBox,FMP_justification,marcus has a yellow hat
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,20,pos,10,VBox,Who is Benny?,1,1,4846,VBox,TRP_justification,benny is the shortest
+1525245439,4b0e3239c17936b3f0f277481affcd74,ACNHKXWKZRUZ5,48,male,yes,thx,12,neg,2,VBox,Who is Mary?,3,0,4916,VBox,TFN_justification,mary is the largest
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,2413,,,
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,22,pos,12,VBox,Who is Rufus?,2,0,3514,VBox,TWP_justification,its colors
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,1515,VBox,TCN_justification,big glass
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10991,VBox,FSP_justification,1
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10995,VBox,TFP_justification,3
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,12,neg,2,VBox,Who is Mary?,NULL,NULL,10995,VBox,TFN_justification,3
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10997,VBox,FMN_justification,3
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,20,pos,10,VBox,Who is Benny?,2,0,1460,VBox,TRP_justification,2
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,2984,VBox,TWN_justification,purple
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,2660,VBox,FMP_justification,medium size
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,23,pos,13,VBox,Who is Sammy?,2,0,6579,VBox,TCP_justification,2
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,8936,VBox,TRN_justification,tallest
+1525243072,1a2b2f213ef91834787f173ff7bdb7ae,AV2VI7635ILLR,30,female,yes,,17,fill,7,VBox,Who is Millie?,3,0,8355,VBox,FSN_justification,biggest
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,4903,,,
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,7077,VBox,FSN_justification,middle hat and medium sized
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5541,VBox,TRN_justification,"3 is the tallest and ""even"" they couldn't reach it implying they had the best chance"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5503,VBox,TWP_justification,"1 is the smallest and the ""even"" implies they'd have the toughest time lifting it"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,5764,VBox,FSP_justification,2 is the medium sized kangaroo
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,4980,VBox,TCN_justification,"I meant to click 1%2C 1 has the smallest cup and ""even"" they couldn't fill it"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,3546,VBox,TCP_justification,"3 had the largest basket and ""even"" they were able to fill it"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6062,VBox,FMN_justification,2's shell color does not match their bucket
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,3680,VBox,TWN_justification,3 is the largest and still couldn't pick up the ball
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4869,VBox,TRP_justification,"1 is the smallest and ""even"" he could reach the apple"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4701,VBox,FMP_justification,2 has the yellow hat which matches the yellow chair
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3053,VBox,TFN_justification,"1 is the smallest and ""even"" they couldn't fit"
+1525241845,006974ac87e35a4eb269c3dc453e3470,APLF5MYVPQJNL,27,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5701,VBox,TFP_justification,"3 is the largest and ""even"" they could fit in the socks"
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,4181,,,
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,9413,VBox,FSN_justification,Because she is the second biggest
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10003,VBox,TCN_justification,I choose 3 because of the cup size%0A
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5044,VBox,TWP_justification,because he is the smallest and would be the least likely to pick it up%0A 
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,6533,VBox,FSP_justification,because he's not big or little he's medium%0A 
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,6352,VBox,TRN_justification,"because she is the tallest and its stated as ""even"""
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5180,VBox,TCP_justification,Because his basket is the biggest and hardest to fill 
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4177,VBox,FMP_justification,because he is wearing the yellow hat
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4505,VBox,TFN_justification,because she is the smallest mouse 
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,5401,VBox,TFP_justification,because he has the biggest feet
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,4866,VBox,FMN_justification,because his shell doesn't match
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5232,VBox,TWN_justification,because the biggest one should be able to pick it up if anyone
+1525235429,0e9c472b225ed5e58efd8b98c4503078,A2YUCJ28XANFOX,33,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,3588,VBox,TRP_justification,he's the shortest
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,5988,,,
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5451,VBox,TRN_justification,They are the tallest but still weren't able to reach
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6196,VBox,FMN_justification,His is the only shell that is a different color than the bucket
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5187,VBox,TRP_justification,They are the shortest but even they were able to get the apple
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,5422,VBox,TCN_justification,They have the smallest cup but even it wasn't full
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,9333,VBox,FSP_justification,The small backpack would be too small and the largest would probably be too heavy to carry
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,2916,VBox,TFP_justification,The socks seemed small but even the largest Panda was able to wear them.
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3953,VBox,TFN_justification,If the hole were large all of them could fit%2C but it it were very small even the smallest couldn't fit.
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6381,VBox,FMP_justification,His yellow hat would match the yellow chair better.
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3942,VBox,TWP_justification,Rufus is the smallest and presumably least able to lift large objects so it is notable that he could
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4141,VBox,TWN_justification,It is notable the largest bunny could not even lift it
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,I could not tell from the information who would be millie but perhaps if they are arranged according size Millie would be number 2 and got the yellow in which case she would be upset
+1525209773,4e40f8cccaf70b572ae6ef87796e1448,A2CF2BD4Q0ZDJN,55,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,3202,VBox,TCP_justification,He has the largest basket which would be most difficult to fill
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,7263,,,
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10000,VBox,TRN_justification,3%2C she is the tallest and can't reach
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,2%2C he is the middle kangaroo
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5526,VBox,TCP_justification,3%2C he has the biggest basket%2C so the others would be easier
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4240,VBox,TFN_justification,1%2C because she is the smallest%2C if they can't fit then she was the closest
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,17,fill,7,VBox,Who is Millie?,3,0,7265,VBox,FSN_justification,3%2C because she is biggest and should have got the purple one
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5163,VBox,TFP_justification,even he means he has the biggest feet
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,5111,VBox,TCN_justification,opps I think it was 1. she had the smallest cup and the easiest to fill
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,9973,VBox,FMN_justification,the bucket and shell are different colors
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5287,VBox,TRP_justification,the others should reach easier than him
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5843,VBox,TWN_justification,the biggest should be able to pick up the biggest one
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5801,VBox,FMP_justification,the chair and hat are the same color
+1525210858,839010418db55b6dbb0b2f10c05914fb,A3QNCW3LR2AVOV,49,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3853,VBox,TWP_justification,the smallest one would have the hardest time
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,8531,VBox,FMP_justification,yellow hat
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,10002,VBox,TWN_justification,largest
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,8423,VBox,TRP_justification,shortest
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,9999,VBox,FMN_justification,carl's shell is pink
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,7168,VBox,TRN_justification,tallest
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,8521,VBox,TFP_justification,largest feet
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,9999,VBox,FSN_justification,yellow hat fits #2
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,7964,VBox,TFN_justification,smallest
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5952,VBox,TCP_justification,largest basket
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,medium kangaroo
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,5960,VBox,TCN_justification,smallest cup
+1525230667,54aad5fac70ba1c391ad4967ae39ccb1,A3VO62XB3T2TLB,65,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5573,VBox,TWP_justification,smallest
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,11,practice,1,VBox,Who is Donny?,2,1,9971,,,
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,16,neg,6,VBox,Who is Frida?,3,0,8387,VBox,TCN_justification,Has the biggest cup that can hold the most marbles
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,19,pos,9,VBox,Who is Franky?,3,1,7765,VBox,TFP_justification,Because they have biggest feet and it is more notable for them to fit into the socks.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,17,fill,7,VBox,Who is Millie?,2,1,9653,VBox,FSN_justification,They are the second biggest turtle%2C who'd get the second biggest hat%2C which is yellow.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,15,neg,5,VBox,Who is Henrietta?,3,1,8670,VBox,TWN_justification,They are the biggest of the three.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,23,pos,13,VBox,Who is Sammy?,1,0,7074,VBox,TCP_justification,Sammy should be the one with the biggest basket.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,14,fill,4,VBox,Who is Carl?,2,1,8075,VBox,FMN_justification,His shell is a different color than his basket.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,12,neg,2,VBox,Who is Mary?,1,1,5301,VBox,TFN_justification,She is the smallest of the three.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,20,pos,10,VBox,Who is Benny?,1,1,7820,VBox,TRP_justification,They are the shortest.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,21,fill,11,VBox,Who is Joey?,NULL,NULL,10008,VBox,FSP_justification,He is the second biggest of the three.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,13,neg,3,VBox,Who is Jessiepillar?,3,1,7027,VBox,TRN_justification,They are the tallest.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,22,pos,12,VBox,Who is Rufus?,1,1,5567,VBox,TWP_justification,He is the smallest.
+1525213038,fa1e60024e33fc1f12b3abc66564446e,A1DZMZTXWOM9MR,37,male,yes,n/a,18,fill,8,VBox,Who is Marcus?,2,1,7733,VBox,FMP_justification,His hat is yellow.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6659,,,
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5736,VBox,FMN_justification,Because the shell isn't the same color as his bucket 
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,6891,VBox,TRP_justification,Because Benny is short%2C he was also able to reach the apple like the taller bears.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,8841,VBox,TFN_justification,Mary is the smallest%2C and even she couldn't fit in the hole. The others are larger so they definitely couldn't either.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,9120,VBox,FSN_justification,The yellow hat is the same size as Millie%2C and she was upset that she got the yellow hat. 
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4335,VBox,TWP_justification,"All the elephants could lift the pumpkin%2C and ""Even Rufus"" could. So therefore%2C Rufus is the smallest elephant.%0A"
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5253,VBox,TWN_justification,The biggest (and obviously strongest) bunny couldn't pick up the ball along with all the other rabbits. Therefore Henrietta is the largest rabbit.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,9023,VBox,FSP_justification,Because he is the medium sized kangaroo in comparison to the other two
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,7359,VBox,TFP_justification,Because they are all the same size%2C you can assume that the biggest panda wouldn't be able to fit in the socks. But%2C Franky was able to fit%2C so I concluded that it was the largest bear.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,6040,VBox,TCN_justification,The smallest cup would fill up first%2C but Frida wasn't able to fill it. So it would be the frog with the smallest cup.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4493,VBox,FMP_justification,The yellow chair would match monkey number 2 wearing the yellow hat.
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,7797,VBox,TCP_justification,The largest basket would take the most acorns to fill up%2C and the 3rd squirrel's basket is full. So the squirrel with the largest basket would be Sammy
+1525236656,69576e17b28e349a358e79132184abbd,AOQC2B77YF8ON,34,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4704,VBox,TRN_justification,The tallest should be able to reach the book%2C but this caterpillar still couldn't so that would be Jessiepillar.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,7566,,,
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5105,VBox,TWP_justification,Rufus is small. They are surprised a small elephant could lift the pumpkin.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5169,VBox,TWN_justification,She is beg and expected to be able to pick it up but she cant.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4768,VBox,FMP_justification,Because he picked up the yellow chair and is wearing a yellow party hat to match%0A
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,23,pos,13,VBox,Who is Sammy?,1,0,3662,VBox,TCP_justification,Sammy is small and they are surprised that the small one could lift the basket.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4737,VBox,TRN_justification,She is the biggest and expected to be able to reach the book%2C but she can't.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,21,fill,11,VBox,Who is Joey?,3,0,7017,VBox,FSP_justification,Joey is holding the backpack that was wrapped up and matches the color on the chart.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10000,VBox,TFP_justification,Because he was not expected to fit into the socks because of his size.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,5531,VBox,TCN_justification,Because she is large and expected to be able to fill up her cup
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,Because she is the only one who got a yellow hat.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,3395,VBox,TRP_justification,Because he is small and wasn't expected to be able to pick the apple
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,5607,VBox,TFN_justification,Because she is smallest and was not expected to find the hole but she did.
+1525219919,2b2dc0ae81078f32bf2a9ce4e64c4a1f,AHIM8PGYOIN0K,26,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,6802,VBox,FMN_justification,Because it's the only crab with a shell that didn't match the bucket.
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,1
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,22,pos,12,VBox,Who is Rufus?,NULL,NULL,10000,VBox,TWP_justification,1
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10001,VBox,FSP_justification,2
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10001,VBox,TRN_justification,3
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10001,VBox,TRP_justification,1
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10001,VBox,FMP_justification,2
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,12,neg,2,VBox,Who is Mary?,NULL,NULL,10000,VBox,TFN_justification,1
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10002,VBox,TFP_justification,3
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,2
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,9999,VBox,TWN_justification,3
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10000,VBox,TCP_justification,1
+1525225412,b045f8c8de2fc8db0c5f6a1c2a25c848,A29A2MQMPJW1O9,39,female,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10002,VBox,FMN_justification,2
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,6213,VBox,TFN_justification,she is the smallest mouse%0A
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,turtle 2 hat fit her
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5047,VBox,TWP_justification,the smallest elephant can lift the same size pumpkin as his the other elephants.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,6905,VBox,TRN_justification,The tallest caterpillar Jessiepillar wasn't able to reach the the book%2C so the other won't have a chance.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,Joey is the biggest kangaroo
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,4548,VBox,TCP_justification,Sammy has the largest basket.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,15,neg,5,VBox,Who is Henrietta?,1,0,3062,VBox,TWN_justification,Henrietta is the biggest and strongest rabbit.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,14,fill,4,VBox,Who is Carl?,1,0,3221,VBox,FMN_justification,His bucket color is green whereas the shell is pink.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,8477,VBox,TFP_justification,The socks size are the same%2C Franky the biggest Panda was able to wear it%2C as his little brother.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,3538,VBox,TCN_justification,Frida has the smallest cup. If the marbles can't fill up her cup then it won't for the largest cup.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,3730,VBox,FMP_justification,The color of Marcus's party is yellow.
+1525224492,10e479b05c38847b5fc78e959c26523d,A188SHJZPHE8BA,31,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,3190,VBox,TRP_justification,All the bear were able to reach an apple%2C even the shortest bear%2C Benny.
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,11,practice,1,VBox,Who is Donny?,2,1,5135,,,
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,12,neg,2,VBox,Who is Mary?,3,0,5011,VBox,TFN_justification,He is the biggest%2C therefore the other mice were probably surprised he could fit.
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,22,pos,12,VBox,Who is Rufus?,1,1,4359,VBox,TWP_justification,He is the smallest and  presumably the weakest.
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,because she is upset. 
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,16,neg,6,VBox,Who is Frida?,3,0,4355,VBox,TCN_justification,Biggest cup%2C hardest to fill.
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,23,pos,13,VBox,Who is Sammy?,3,1,6536,VBox,TCP_justification,big basket%2C takes more to fill.
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,18,fill,8,VBox,Who is Marcus?,2,1,3976,VBox,FMP_justification,hat is yellow
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,15,neg,5,VBox,Who is Henrietta?,1,0,4379,VBox,TWN_justification,smallest and therefore probably the weakest
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,19,pos,9,VBox,Who is Franky?,3,1,3506,VBox,TFP_justification,He is the biggest panda and the socks were all small
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,14,fill,4,VBox,Who is Carl?,2,1,5845,VBox,FMN_justification,his shell isn't green
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,13,neg,3,VBox,Who is Jessiepillar?,3,1,5124,VBox,TRN_justification,he was the tallest
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,20,pos,10,VBox,Who is Benny?,1,1,3727,VBox,TRP_justification,smallest bear%2C hardest to reach up
+1525254513,5c6f934a4d9d7684e1699c3cde576e45,A3UNS38BYD3OQR,39,male,yes,i forgot to pick a number on one of them. My mind went blank. My apologies. ,21,fill,11,VBox,Who is Joey?,1,0,6553,VBox,FSP_justification,because he is the middle roo.
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,11,practice,1,VBox,Who is Donny?,2,1,9602,,,
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,10000,VBox,TWN_justification,because he is too small
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,23,pos,13,VBox,Who is Sammy?,1,0,8634,VBox,TCP_justification,he has smaller basket
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10000,VBox,FMP_justification,he has yellow hat
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,13,neg,3,VBox,Who is Jessiepillar?,3,1,4727,VBox,TRN_justification,he is tall and could not reach
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,22,pos,12,VBox,Who is Rufus?,NULL,NULL,9999,VBox,TWP_justification,he is the weakest among
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,21,fill,11,VBox,Who is Joey?,2,1,8441,VBox,FSP_justification,he is the middle son
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,12,neg,2,VBox,Who is Mary?,1,1,5037,VBox,TFN_justification,he is the smallest of them
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,19,pos,9,VBox,Who is Franky?,3,1,5690,VBox,TFP_justification,he is biggest of them
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,14,fill,4,VBox,Who is Carl?,2,1,7699,VBox,FMN_justification,different color from his bucket
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,16,neg,6,VBox,Who is Frida?,1,1,5037,VBox,TCN_justification,he has the smallest cup
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,20,pos,10,VBox,Who is Benny?,1,1,4159,VBox,TRP_justification,he is the shortest among
+1525247783,bd8cf31935647f0bac4d59bcb55eb9e4,A1848YLP5S6RN6,24,male,yes,Some pages automatically redirected and passed without displaying the whole images. It happened to 2-3 of the images,17,fill,7,VBox,Who is Millie?,1,0,7277,VBox,FSN_justification,she prefers purple but received yellow
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,9295,,,
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,20,pos,10,VBox,Who is Benny?,3,0,6795,VBox,TRP_justification,he is the biggest
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,12,neg,2,VBox,Who is Mary?,3,0,8601,VBox,TFN_justification,she is the biggest
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,7872,VBox,FSP_justification,she is the medium size
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,6681,VBox,TFP_justification,has the biggest feet
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,8804,VBox,TWN_justification,he is the biggest%2C yet he can't pick up the heavy bowling ball 
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7790,VBox,FMP_justification,he is wearing a yellow hat
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5856,VBox,TWP_justification,he is the smallest and even he managed to lift the pumpkin 
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10000,VBox,TRN_justification,she is the tallest of the three and even  she couldn't reach a book
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,she is the smallest
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,8548,VBox,TCP_justification,he had the biggest basket 
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,7168,VBox,TCN_justification,she has the smallest cup
+1525242688,a69ecf194d613f0d009a5e78381f3de4,AB7LYMORLR5H0,27,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,6619,VBox,FMN_justification,his shell is pink while his bucket is green
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,4852,,,
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,9728,VBox,TCN_justification,Because it said EVEN Frida. This means that the largest couldn't even fill it up.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10002,VBox,FSP_justification,Number 3 is Joey because it is orange.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4652,VBox,TRP_justification,Because it is saying that even the shortest one can reach an apple.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4504,VBox,TWN_justification,Because it is so heavy%2C it is saying even the largest bunny couldn't pick it up.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5696,VBox,FMP_justification,Because his party hat is yellow.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4940,VBox,TWP_justification,Becaues its' saying even the smallest elephant can lift one up.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3260,VBox,TFN_justification,It's saying the hole is so small that even the smallest one can't fit through.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,8962,VBox,FSN_justification,Because that's the only hat that is yellow.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,7454,VBox,TFP_justification,It's saying even the biggest panda can fit into them.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3160,VBox,TRN_justification,It's saying the books are so high even the biggest one can't reach it.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6792,VBox,FMN_justification,Because his shell is the only one that doesn't match.
+1525252779,e3eeddfb58cda9e8d81892b2a221feae,A2541C8MY0BYV3,29,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,3178,VBox,TCP_justification,It's saying even the smallest one can fit some.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,11,practice,1,VBox,Who is Donny?,2,1,4690,,,
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,19,pos,9,VBox,Who is Franky?,3,1,5294,VBox,TFP_justification,Even suggests that the socks stretched to accommodate the largest animal.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,21,fill,11,VBox,Who is Joey?,2,1,6266,VBox,FSP_justification,The backpacks are most likely assigned to the animal with the related size (small%2C medium%2C large)
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,15,neg,5,VBox,Who is Henrietta?,3,1,5573,VBox,TWN_justification,Even suggests that the ball was too heavy for the strongest animal%2C which was likely the largest of the three presented animals.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,23,pos,13,VBox,Who is Sammy?,3,1,5032,VBox,TCP_justification,Even suggests the most impressive accomplishment%2C the filling of the largest presented basket.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,14,fill,4,VBox,Who is Carl?,2,1,5495,VBox,FMN_justification,The only selection with a shell that was a different color was 2.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,12,neg,2,VBox,Who is Mary?,1,1,3168,VBox,TFN_justification,Even suggests the most extreme%2C as the hole appears small in the illustration it implies the smallest mouse is the most extreme condition in the scenario.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,20,pos,10,VBox,Who is Benny?,1,1,3382,VBox,TRP_justification,Even%2C in this case%2C suggests that the least capable%2C or shortest animal%2C was still able to accomplish the task.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,17,fill,7,VBox,Who is Millie?,2,1,6600,VBox,FSN_justification,The medium sized hat is most likely selected for the medium sized animal.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,13,neg,3,VBox,Who is Jessiepillar?,3,1,3707,VBox,TRN_justification,The tallest animal being unable to complete the task is the most noteworthy event in this scenario.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,22,pos,12,VBox,Who is Rufus?,1,1,3504,VBox,TWP_justification,The most extreme condition in this scenario was the lifting of the pumpkin by the weakest%2C and presumably smallest%2C presented animal.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,18,fill,8,VBox,Who is Marcus?,2,1,3814,VBox,FMP_justification,The second animal was wearing the yellow hat.
+1525226413,aba509d8e8cf8b9fb87220ce8064e2df,A2F2DDH12YU4AK,34,male,yes,No further relevant comment%2C at this time,16,neg,6,VBox,Who is Frida?,1,1,4931,VBox,TCN_justification,The most extreme condition in the scenario seems to be filling the smallest cup.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6159,,,
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,5852,VBox,TRP_justification,"Because the word ""even"" suggests that Benny would struggle to reach an apple in a tree.  This implies that Benny is short."
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,5865,VBox,FSP_justification,I would think that the medium backpack would go to the child of medium height.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6611,VBox,TWN_justification,Because they thought she%2C the biggest%2C would be able to pick it up%2C but she could not.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,6699,VBox,TCP_justification,It sounded like Sammy would have a hard time filling his basket%2C and Sammy has the biggest one%2C which would be the hardest to fill.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6216,VBox,FMP_justification,The monkey with the yellow party hat is number 2 - Marcus
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3540,VBox,TRN_justification,"It said ""even Jessiepillar"" could not reach%2C which implies they thought she would be able to.  This leads me to believe that they would think the tallest could reach and they were surprised when she could not."
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3820,VBox,TWP_justification,Rufus is the smallest%2C and might struggle to lift the heavy vegetable.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5957,VBox,FMN_justification,This is the only one that doesnt have a shell that is the same color as his bucket.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,4858,VBox,TCN_justification,Frida has the largest cup and struggled to fill it.  This is the third frog.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,19,pos,9,VBox,Who is Franky?,1,0,6171,VBox,TFP_justification,You would think the socks would be too big since he is the smallest%2C but they actually fit.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,6019,VBox,FSN_justification,If you match the hats according to size in relation to the sizes of the turtles%2C it would be the second turtle who got the yellow hat.
+1525230958,16f3be3a3fccc9647305289ac1b7b827,APUPF3D94XYUQ,42,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4202,VBox,TFN_justification,One would think the smallest would fit the easiest%2C so it was surprising to see the littlest couldn't
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,3584,,,
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,18,fill,8,VBox,Who is Marcus?,3,0,4883,VBox,FMP_justification,it looks like Marcus 
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,22,pos,12,VBox,Who is Rufus?,2,0,5611,VBox,TWP_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,1,0,2320,VBox,TRN_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,14,fill,4,VBox,Who is Carl?,3,0,4004,VBox,FMN_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,2260,VBox,TFP_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,2420,VBox,TWN_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,21,fill,11,VBox,Who is Joey?,1,0,2557,VBox,FSP_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4566,VBox,TCP_justification,he is the eldest 
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3176,VBox,TFN_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,17,fill,7,VBox,Who is Millie?,1,0,1299,VBox,FSN_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,3692,VBox,TRP_justification,i don't  know
+1525253756,39dd06d0a4b634ec482793431ac8fb18,A30KV6CIGNH3E5,31,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,950,VBox,TCN_justification,i don't  know
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,11,practice,1,VBox,Who is Donny?,NULL,NULL,10001,,,
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,20,pos,10,VBox,Who is Benny?,1,1,9118,VBox,TRP_justification,HE IS THE SMALLEST
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,12,neg,2,VBox,Who is Mary?,1,1,8244,VBox,TFN_justification,Because she is the smallest and did not fit in the hole
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,18,fill,8,VBox,Who is Marcus?,NULL,NULL,9999,VBox,FMP_justification,
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,23,pos,13,VBox,Who is Sammy?,1,0,6775,VBox,TCP_justification,Because he is the smallest and was able to fill the basket
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,16,neg,6,VBox,Who is Frida?,1,1,6233,VBox,TCN_justification,because even she was has the smallest cup%2C she wasn't able to fill it up
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,the second one is Millie because that's the one that the yellow hat fit
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,22,pos,12,VBox,Who is Rufus?,1,1,4879,VBox,TWP_justification,Rufus is the smallest and he can also lift a pumpkin
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,13,neg,3,VBox,Who is Jessiepillar?,3,1,5666,VBox,TRN_justification,Jessiepiller is the tallest and she wasn't able to reach the shelf to get the book
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,14,fill,4,VBox,Who is Carl?,2,1,6346,VBox,FMN_justification,Because he has a green bucket with a pink shell
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,19,pos,9,VBox,Who is Franky?,1,0,5131,VBox,TFP_justification,franky is number 3 because even though the sucks were the same size they fix onto the larger panda
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,15,neg,5,VBox,Who is Henrietta?,3,1,6314,VBox,TWN_justification,Henrietta is the biggest so she must be the strogest 
+1525236574,b8cf85c35bb6d510c1df5ff17d804ef8,A2WS38OS7JUQUG,46,male,yes,Thank you for the opportunity to let me participate in the project and I hope my answers contribute with the success of this research as well as your goals.%0A,21,fill,11,VBox,Who is Joey?,2,1,7699,VBox,FSP_justification,Because he has the mid size of the 3 kangaroo
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,8078,,,
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10005,VBox,FMP_justification,His hat is yellow
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,12,neg,2,VBox,Who is Mary?,3,0,6162,VBox,TFN_justification,I messed up it was 1%2C because she is the smallest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5399,VBox,TFP_justification,It is the biggest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5350,VBox,FMN_justification,His bucket and shell are different colors
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,7795,VBox,TCN_justification,Her cup is the smallest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4234,VBox,TRP_justification,He is the shortest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10959,VBox,FSP_justification,He is medium sized
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5096,VBox,TRN_justification,She is the tallest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4200,VBox,TCP_justification,It has the biggest basket
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,6690,VBox,FSN_justification,Her hat is the middle size
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,3930,VBox,TWN_justification,She is the biggest
+1525236124,61e01887d088fd1a58b91f21ea052494,A2M3FPQF852HW4,25,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3927,VBox,TWP_justification,He is the smallest%0A
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,9111,,,
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4964,VBox,TFN_justification,She is the smallest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5295,VBox,FMN_justification,He has a different color shell than the bucket.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,7258,VBox,TFP_justification,He is the largest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,8666,VBox,TWN_justification,She is the largest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10010,VBox,FSP_justification,He is in the middle.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3926,VBox,TWP_justification,He is the smallest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,3912,VBox,TCN_justification,She has the largest cup.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5419,VBox,FMP_justification,He has a yellow hat.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,3490,VBox,TRP_justification,He is the shortest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3501,VBox,TRN_justification,He is the largest.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,7994,VBox,FSN_justification,She is the middle turtle with a yellow hat.
+1525241739,31827aa5d3810c948d5dd74fd661a1d7,A22GVUGZ3FI2CY,30,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5463,VBox,TCP_justification,Has the largest basket.
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,4533,,,
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,6541,VBox,TWP_justification,Because Rufus is the least likely to pick up a pumpkin
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5549,VBox,TRN_justification,Because he is the tallest and was unable to reach the book
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,Because Millie is too small for the purple
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,3900,VBox,TRP_justification,Because many is the shortest
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,15,neg,5,VBox,Who is Henrietta?,1,0,7952,VBox,TWN_justification,Because Henrietta is the smallest
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,5873,VBox,FSP_justification,Because Joey is a medium-size kangaroo
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5910,VBox,TCP_justification,Because Sammy had the biggest basket
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,3860,VBox,TCN_justification,Because Frida has the biggest cup
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7533,VBox,FMP_justification,Because Marcus has a yellow hat on
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5861,VBox,TFP_justification,Because Frankie has the biggest feet
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4051,VBox,TFN_justification,Because Mary is the smallest mouse
+1525247308,591eb3905f7f300ec80331401962bec1,A2YCMT5BPA0AG9,55,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,4893,VBox,FMN_justification,Because the shell did not match the bucket
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10000,,,
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,8186,VBox,TWN_justification,"The statement is ""even Henrietta"" wasn't able to pick up the bowling ball which means that due to her size even she cannot lift it."
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10001,VBox,FMN_justification,2 Carl is the only crab whos shell doesn't have the same color as his bucket.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,6050,VBox,TRP_justification,If Benny was able to reach an apple it's to say that Benny is short.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,7065,VBox,TFN_justification,If the hole was so small even Marry couldn't fit it probably means that Mary is the smallest and even she could not fit.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,8058,VBox,FMP_justification,Marcus is the only monkey with a yellow party hat and there is a chair that is also yellow.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5697,VBox,TCP_justification,Sammy has a large basket so even he was able to fill it up.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4794,VBox,TRN_justification,Jessiepillar is to be tall and even if the tallest caterpillar could not reach then that's why the tallest caterpillar would be 3.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,Millie is 2 because she is the only one with a hat that fits but it's not the same color.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3562,VBox,TWP_justification,Rufus is 1 because he is the smallest yet he could pick up the pumpkin.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4802,VBox,TCN_justification,Frida is 1 because she has the smallest cup and it couldn't be filled.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,8322,VBox,FSP_justification,Joey is the mediums sized kangaroo so it would only be fit for him.
+1525218834,aa84ad9416db0c001af8d9752c270e3c,A2ML4TEAJTDQD0,41,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5218,VBox,TFP_justification,To be able to fit into something means that it will not be tight so since Franky is the largest one he was able to fit into the socks.
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6483,,,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,18,fill,8,VBox,Who is Marcus?,3,0,8581,VBox,FMP_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10002,VBox,TRN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,20,pos,10,VBox,Who is Benny?,3,0,3798,VBox,TRP_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,21,fill,11,VBox,Who is Joey?,1,0,3121,VBox,FSP_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,12,neg,2,VBox,Who is Mary?,2,0,2260,VBox,TFN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,23,pos,13,VBox,Who is Sammy?,2,0,3277,VBox,TCP_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10993,VBox,FMN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,3480,VBox,TWN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,22,pos,12,VBox,Who is Rufus?,2,0,2214,VBox,TWP_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,2500,VBox,FSN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,2845,VBox,TCN_justification,
+1525236180,04bc0599c53b0d3f7dacdcf19a990002,AX6F7AC21GC4J,32,male,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10001,VBox,TFP_justification,
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,8932,,,
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10000,VBox,TCN_justification,because she has the biggest cup
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,3986,VBox,TFP_justification,because he is the biggest so if they fit him%2C they fit everyone
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,7217,VBox,FSN_justification,because she got yellow and the yellow is the middle size that you fit only her
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4174,VBox,TWN_justification,because she is the biggest and propbably strongest
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4471,VBox,TCP_justification,because his is the largest
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,5228,VBox,FSP_justification,because he is medium
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4692,VBox,TFN_justification,because she is the smallest so if she couldnt fit none of them could
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4437,VBox,TRP_justification,he is shortest
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5082,VBox,FMN_justification,his shell is pink and bucket green%2C others shells match bucket
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4299,VBox,TRN_justification,he is tallest
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3869,VBox,TWP_justification,he is smallest and pumpkin would be hard for him to carry
+1525241926,384c053d1098e9f586b39e31c81c3b06,A348VZXJU4J66N,35,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,7016,VBox,FMP_justification,his hat is yellow
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10001,,,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,PURPLE
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10000,VBox,TCN_justification,NO ONE
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,22,pos,12,VBox,Who is Rufus?,NULL,NULL,10001,VBox,TWP_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,14,fill,4,VBox,Who is Carl?,3,0,8590,VBox,FMN_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4635,VBox,TRN_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,19,pos,9,VBox,Who is Franky?,2,0,3373,VBox,TFP_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,18,fill,8,VBox,Who is Marcus?,3,0,6680,VBox,FMP_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,12,neg,2,VBox,Who is Mary?,NULL,NULL,10001,VBox,TFN_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,23,pos,13,VBox,Who is Sammy?,2,0,7723,VBox,TCP_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,21,fill,11,VBox,Who is Joey?,3,0,4285,VBox,FSP_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,9024,VBox,TWN_justification,
+1525248324,8038f28f37cee92d484cac1e6b9abaa7,A3CQ41B74ODWUP,58,male,yes,,20,pos,10,VBox,Who is Benny?,2,0,2470,VBox,TRP_justification,
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,9742,,,
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,9749,VBox,TWN_justification,Looks like it cant pick up the bowling ball.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10000,VBox,TCP_justification,1 is sammy cause he is the smallest.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6906,VBox,FMP_justification,He is wearing the yellow hat.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,1,0,8103,VBox,TRN_justification,Because she is the smallest.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,4953,VBox,TFP_justification,Because he is the biggest of all.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5748,VBox,FMN_justification,Because his bucket and shell didnt match.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,6021,VBox,TFN_justification,She is the smallest.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4846,VBox,TRP_justification,Because he is the smallest.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,6576,VBox,FSP_justification,He has the medium backpack.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,6539,VBox,TCN_justification,She has the smallest cup.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5474,VBox,TWP_justification,Because he is the smallest and the pumpkin is bigger than him.
+1525236258,4d176140b453439e550a8d5773058119,A36RO2EK1P2G3W,32,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,5081,VBox,FSN_justification,Because she is in the middle.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,8669,,,
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6880,VBox,TWN_justification,Because the question states that even Henrietta wasn't able to pick up the ball%2C which insinuates that she's the largest.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,23,pos,13,VBox,Who is Sammy?,1,0,6191,VBox,TCP_justification,Because the sentence said even Sammy was able to fill his basket%2C suggesting that he is the smallest.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,2/ Because she is the middle turtle and the orange hat is in the middle.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5256,VBox,TRN_justification,Because she is the tallest%2C and if she was unable to reach%2C the others wouldn't be able to either.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3874,VBox,TWP_justification,Because he is the smallest%2C and the sentence suggests the word even Rufus so it suggests that he is the smallest.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,6199,VBox,FSP_justification,Because he is the medium size kangaroo.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,3991,VBox,TFN_justification,Because the hole is small and she is the smallest mouse. The sentence suggests that even the smallest was unable to fit.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4639,VBox,TRP_justification,Because he is the smallest%2C and the sentence suggests that all the bears were able to reach.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4700,VBox,FMP_justification,Because he is wearing the yellow hat.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,16,neg,6,VBox,Who is Frida?,3,0,5210,VBox,TCN_justification,Because she is the largest%2C and should have been able to complete the task.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,19,pos,9,VBox,Who is Franky?,1,0,5701,VBox,TFP_justification,Because he is the smallest and the socks may have been too big.
+1525219573,60016272c9cb24ef7277c96cbe8b1069,A3GEHH49HNJM57,44,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5975,VBox,FMN_justification,Because the shell is pink and the bucket is green. Therefore%2C it didn't match.
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,5164,,,
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4635,VBox,FMP_justification,they are wearing a yellow hat
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10004,VBox,TCP_justification,number 3%2C he has the biggest basket
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3267,VBox,TRN_justification,tallest one
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,4425,VBox,FSN_justification,middle hat is for middle turtle
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,3015,VBox,TFP_justification,biggest feet still able to fit the socks
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,2517,VBox,TWN_justification,they are the biggest and still cant pick it up
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,5883,VBox,FSP_justification,joey is the medium sized kangaroo
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,2997,VBox,TWP_justification,rufus is the littlest and is still able to pick up the pumpkin
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,2981,VBox,TFN_justification,smallest mouse and was still not able to fit
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5874,VBox,FMN_justification,only one with a mismatched shell and bucket
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,3170,VBox,TRP_justification,they are the shortest
+1525210059,045a120264d0666d50879d24e88511fe,A1L3937MY09J3I,35,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4466,VBox,TCN_justification,smallest cup should be easiest to fill
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,3902,,,
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4603,VBox,TWP_justification,he's smaller than the others
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4275,VBox,FMP_justification,he has a yellow hat
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5672,VBox,TWN_justification,they are the biggest
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4739,VBox,TCP_justification,they have the biggest basket
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,4891,VBox,FMN_justification,his shell and bucket are different colors
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4909,VBox,TCN_justification,they have the smallest cup
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,2764,VBox,TFP_justification,they are the biggest panda
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,7329,VBox,FSN_justification,they are the middle size and so is the yellow hat
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,2894,VBox,TFN_justification,they are the smallest mouse
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5719,VBox,TRP_justification,they are the shortest
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,21,fill,11,VBox,Who is Joey?,1,0,9586,VBox,FSP_justification,they have the medium backpack
+1525252880,abae5e6a235713d557783aa63f7151e5,A2XFO0X6RCS98M,27,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3877,VBox,TRN_justification,they are the tallest
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6295,,,
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,9999,VBox,FSN_justification,she is the 2nd largest
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,12,neg,2,VBox,Who is Mary?,3,0,4716,VBox,TFN_justification,she is the largest and couldn't fit
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4615,VBox,TWP_justification,he is the smallest but still able to lift a large pumpkin
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5011,VBox,FMP_justification,he is wearing the yellow hat
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,16,neg,6,VBox,Who is Frida?,2,0,8641,VBox,TCN_justification,her cup is to small
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,4268,VBox,TFP_justification,he is the largest
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,21,fill,11,VBox,Who is Joey?,1,0,7874,VBox,FSP_justification,he is the smallest 
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4636,VBox,TWN_justification,she is the biggest and strongest
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,23,pos,13,VBox,Who is Sammy?,1,0,4973,VBox,TCP_justification,his basket is the largest but he managed to fill it all
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,6994,VBox,FMN_justification,his shell and bucket are pink and green
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4168,VBox,TRN_justification,he is the tallest but unable to reach that height
+1525218589,fa02e99fd558475cf6ec4c00c64c76da,A1VLRMNX5OSDNJ,30,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4704,VBox,TRP_justification,he is the shortest
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6337,,,
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,7141,VBox,TCN_justification,She has the least space to fill up her cup.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6680,VBox,FMP_justification,His hat matches the chair.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,23,pos,13,VBox,Who is Sammy?,1,0,5773,VBox,TCP_justification,He is the smallest.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4466,VBox,TFN_justification,Mary is the smallest.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5332,VBox,FMN_justification,His shell didn't match his bucket.%0A
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3759,VBox,TWP_justification,Rufus is the smallest and least capable.%0A
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4485,VBox,TRN_justification,He is the tallest with the most reach.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,7044,VBox,FSP_justification,Joey is the middle sized kangaroo.%0A
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4034,VBox,TRP_justification,Benny is the shortest but could still reach.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5016,VBox,TWN_justification,Henrietta is presumably the biggest and strongest.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,7520,VBox,FSN_justification,The middle doesn't match what the middle turtle likes.
+1525232226,5ba880ffa71415bd1bcb1a026d625971,A1ZT30BGR3266K,33,female,yes,,19,pos,9,VBox,Who is Franky?,1,0,7019,VBox,TFP_justification,Franky is the smallest and the socks would be harder to fit.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,11,practice,1,VBox,Who is Donny?,2,1,5648,,,
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,12,neg,2,VBox,Who is Mary?,1,1,6867,VBox,TFN_justification,She is the smallest
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,19,pos,9,VBox,Who is Franky?,3,1,3384,VBox,TFP_justification,He is the largest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,18,fill,8,VBox,Who is Marcus?,2,1,4998,VBox,FMP_justification,He has the yellow hat.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,13,neg,3,VBox,Who is Jessiepillar?,3,1,4018,VBox,TRN_justification,He is the tallest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,20,pos,10,VBox,Who is Benny?,1,1,3746,VBox,TRP_justification,He is the shortest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,21,fill,11,VBox,Who is Joey?,NULL,NULL,9999,VBox,FSP_justification,He is the biggest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,16,neg,6,VBox,Who is Frida?,1,1,4315,VBox,TCN_justification,She has the smallest cup.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,22,pos,12,VBox,Who is Rufus?,1,1,4231,VBox,TWP_justification,He is the smallest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,She is the medium sized one.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,15,neg,5,VBox,Who is Henrietta?,1,0,3982,VBox,TWN_justification,I got this one wrong. It's 3 because she is the biggest.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,23,pos,13,VBox,Who is Sammy?,3,1,3041,VBox,TCP_justification,He has t he biggest basket.
+1525242121,a121895719d6d00d232b810f05c21663,A2Z3VYYYAIOGHC,28,male,yes,Thank you!,14,fill,4,VBox,Who is Carl?,2,1,4449,VBox,FMN_justification,His shell didn't match his bucket.
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,6974,,,
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,12,neg,2,VBox,Who is Mary?,3,0,6945,VBox,TFN_justification,She's the big mouse
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,6396,VBox,TWP_justification,even indicates the smallest was able to do it
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,9351,VBox,FSP_justification,Joey is the medium sized%0A
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,15,neg,5,VBox,Who is Henrietta?,1,0,6369,VBox,TWN_justification,"Should have clicked 3. ""even"" the strongest wasn't able to lift it"
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4437,VBox,TCP_justification,Has the biggest basket - most acorns needed to fill
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5608,VBox,FMP_justification,He has the yellow hat
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,5966,VBox,TCN_justification,SHe has the smallest cup
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,19,pos,9,VBox,Who is Franky?,NULL,NULL,10001,VBox,TFP_justification,Biggest panda%0A
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,5648,VBox,FSN_justification,The medium hat is yellow and that is the medium turtle%0A
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4994,VBox,TRN_justification,She is the longest caterpillar
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,4116,VBox,TRP_justification,That is the shortest bear
+1525229111,29df2bc1fe147678835ce428e829cbd5,A1QHPTK8NV3IBQ,27,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5787,VBox,FMN_justification,That shell and bucket are different colors
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,9313,,,
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,Because there is only one color other than purple.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,6414,VBox,TCP_justification,Because he is the smallest%2C and perhaps the least intelligent?
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,15,neg,5,VBox,Who is Henrietta?,1,0,4246,VBox,TWN_justification,Because #1 is the smallest and least likely to pick up a ball.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7210,VBox,FSP_justification,Because he is the medium sized Kangaroo. I would guess the medium sized back pack is for him.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4983,VBox,TRP_justification,Because he is the shortest and least likely to reach teh tree.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,4002,VBox,TCN_justification,Because he has teh biggest cup and the most difficult to fill.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4721,VBox,FMP_justification,Because yellow matches his hat.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5463,VBox,TWP_justification,Because he is small and least likely to be able to lift a pumpkin.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4267,VBox,TFN_justification,because 1 is the smallest and most likely to fit through the hole/
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6456,VBox,FMN_justification,Because 2 shell does not match his bucket.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,19,pos,9,VBox,Who is Franky?,1,0,5747,VBox,TFP_justification,Because he is the smallest and least likely to fit the socks.
+1525212783,e331704a682339fbe79eedd8b77881d2,A2UTV66F2E69A6,29,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,1,0,4577,VBox,TRN_justification,I dont know.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6353,,,
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5029,VBox,TCP_justification,The words Even Sammy suggest that the basket that was to be filled was the largest of the three%2C and thus the character holding the larger basket was Sammy.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4090,VBox,FMP_justification,Marcus picked the Yellow chair that matches his hat%2C thus Marcus is the monkey with the yellow party hat.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3794,VBox,TFN_justification,Even Mary suggests that the smallest mouse wasn't able to fit through the very small hole%2C and that was the first one%2C likely Mary.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,3802,VBox,TFP_justification,That panda is Franky because all the socks were the same size%2C and the phrase Even Franky suggests that it was a larger bear fitting into socks that could also fit a small one.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,6474,VBox,FSN_justification,The only yellow hat is a medium sized hat%2C logically%2C the parent turtle would pick out sizes based on the size of their children%2C thus the medium sized hat for a medium sized turtle.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6053,VBox,TWN_justification,Assuming the larger of the three bunnies is also the strongest%2C the phrase Even Henrietta suggests disbelief that an event occured. All the bowling balls are the same size%2C and shape%2C so it must be referring to the largest of the bunnies.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5130,VBox,TWP_justification,That elephant is Rufus because the phrase Even Rufus suggests disbelief that the event happened%2C if all the pumpkins are of the same size and weight%2C that disbelief must be based on the smaller of the elephants.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,8412,VBox,FSP_justification,The medium backpack matches the size of the medium Kangaroo%2C so that must be Joey.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,6078,VBox,TCN_justification,That frog is Frida because the phrase suggests that the frogs could not have even filled up a small cup%2C that frog is holding the smallest cup.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,5409,VBox,TRP_justification,That bear is Benny because naturally it would be assumed that the smaller of the bears could have problems reaching an apple%2C however%2C this did not happen%2C and thus the phrasing of the story.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5206,VBox,FMN_justification,The only crab that doesn't have a matching shell is 2%2C and because of that%2C that crab must be Carl.
+1525226731,6057a7bba436705726e6d28f7bee0869,AGVUHOBSCP6YC,34,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5166,VBox,TRN_justification,That caterpillar is Jessiepillar because the phrasing suggests that even the largest caterpillar%2C which is number 3%2C is unable to reach the high shelf. 
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,11,practice,1,VBox,Who is Donny?,3,0,2636,,,
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,12,neg,2,VBox,Who is Mary?,2,0,7606,VBox,TFN_justification,look guilty
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,21,fill,11,VBox,Who is Joey?,1,0,1513,VBox,FSP_justification,
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10006,VBox,TRP_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,2,0,7165,VBox,TRN_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,2037,VBox,FMN_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,23,pos,13,VBox,Who is Sammy?,2,0,1274,VBox,TCP_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,1300,VBox,TWN_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,18,fill,8,VBox,Who is Marcus?,1,0,1511,VBox,FMP_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,22,pos,12,VBox,Who is Rufus?,2,0,3313,VBox,TWP_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,16,neg,6,VBox,Who is Frida?,2,0,1223,VBox,TCN_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,7286,VBox,FSN_justification,It looks the most suspect to me.
+1525211586,35188af7aa0831a2a198619d2def19e8,A3JLE2LJ5I17E2,29,male,yes,,19,pos,9,VBox,Who is Franky?,2,0,1355,VBox,TFP_justification,It looks the most suspect to me.
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,8478,,,
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6992,VBox,TWN_justification,because he was the one exagerated
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5710,VBox,TWP_justification,because even he as ge is small
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10002,VBox,FSP_justification,he is the medium sized
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4670,VBox,TRN_justification,he is tallest and still couldnt
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,4825,VBox,TCP_justification,he is so small and surprising
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,17,fill,7,VBox,Who is Millie?,3,0,5913,VBox,FSN_justification,because there is a pig purple one
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,5345,VBox,TFN_justification,as smallest surprising she couldnt
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5064,VBox,TFP_justification,he fit in the big socks
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5933,VBox,FMN_justification,the different colors
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,5796,VBox,TCN_justification,so small youd think it would fill
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4675,VBox,TRP_justification,he is so short for this
+1525227777,cd98a502c21c6c7a7e3215f280590dd2,A2YKYAZYVWOXBO,40,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4258,VBox,FMP_justification,he is wearing the yellow one
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,11,practice,1,VBox,Who is Donny?,2,1,4037,,,
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,12,neg,2,VBox,Who is Mary?,2,0,4512,VBox,TFN_justification,Is his nick name
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,21,fill,11,VBox,Who is Joey?,1,0,3953,VBox,FSP_justification,It is for tallest
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,20,pos,10,VBox,Who is Benny?,3,0,3267,VBox,TRP_justification,It is for leader in his group.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,15,neg,5,VBox,Who is Henrietta?,2,0,4785,VBox,TWN_justification,She is an blue color.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,14,fill,4,VBox,Who is Carl?,NULL,NULL,10011,VBox,FMN_justification,It is an sharp Carl.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,19,pos,9,VBox,Who is Franky?,1,0,4505,VBox,TFP_justification,He is an tallest.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,13,neg,3,VBox,Who is Jessiepillar?,1,0,1862,VBox,TRN_justification,He is an tallest caterpillar.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,18,fill,8,VBox,Who is Marcus?,3,0,4733,VBox,FMP_justification,He is an tallest.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,22,pos,12,VBox,Who is Rufus?,1,1,3073,VBox,TWP_justification,For eating.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,16,neg,6,VBox,Who is Frida?,3,0,2239,VBox,TCN_justification,The frog Frida is for small group.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,17,fill,7,VBox,Who is Millie?,1,0,6689,VBox,FSN_justification,Because it is for an favorite color for his turtile.
+1525234408,90fd618de93d710a7320a628868f013e,A321YWMP74ULKH,29,female,yes,No,23,pos,13,VBox,Who is Sammy?,1,0,2654,VBox,TCP_justification,He is an eat some fruits
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,3475,,,
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,5176,VBox,TFP_justification,'even franky' means that it was unexpected%2C so it would be the largest
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,3994,VBox,FMN_justification,carl has a pink shell and green bucket
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,3405,VBox,TCN_justification,she has the smallest cup so it was supposed to be easy
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3871,VBox,TWP_justification,only the smallest would be impressive
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4377,VBox,FMP_justification,the yellow hat matches the chair
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,2766,VBox,TWN_justification,the strongest one would be the biggest
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,3076,VBox,TCP_justification,it would be impressive to fill the largest basket
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,3251,VBox,FSN_justification,she's the only one with a yellow hat
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,2681,VBox,TFN_justification,it's surprising that the smallest couldn't fit
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,3009,VBox,TRP_justification,it's surprising that the shortest could reach
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,3424,VBox,FSP_justification,the medium size goes to the medium child
+1525247362,bf4187aa328f957eb46bd6e1899b8266,A1LHSOH23WKNJI,23,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,2871,VBox,TRN_justification,the tallest would be expected to reach
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,11,practice,1,VBox,Who is Donny?,NULL,NULL,10460,,,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,15,neg,5,VBox,Who is Henrietta?,2,0,2658,VBox,TWN_justification,GUESS
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,1105,VBox,FMP_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,22,pos,12,VBox,Who is Rufus?,2,0,1826,VBox,TWP_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,16,neg,6,VBox,Who is Frida?,2,0,1737,VBox,TCN_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,1167,VBox,FSP_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,20,pos,10,VBox,Who is Benny?,2,0,1499,VBox,TRP_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,12,neg,2,VBox,Who is Mary?,2,0,1563,VBox,TFN_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,2205,VBox,FSN_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,23,pos,13,VBox,Who is Sammy?,2,0,1525,VBox,TCP_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,2,0,1304,VBox,TRN_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,1693,VBox,FMN_justification,
+1525248809,663f6cdb23d0af0ef50f4f44973f0332,A33M7EZ72P8TWF,30,male,yes,,19,pos,9,VBox,Who is Franky?,2,0,1819,VBox,TFP_justification,
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6036,,,
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,7102,VBox,TWN_justification,"Because it says ""Even Henrietta"" couldn't pick up the ball%2C implying Henrietta is the strongest bunny a.k.a. the largest bunny."
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,4920,VBox,TCP_justification,The first squirrel is Sammy because the youngest one would probably have the hardest time filling his basket%2C and I assume the smallest squirrel to be the youngest.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,4724,VBox,FMN_justification,The second crab has a pink seashell and a green bucket%2C therefore his shell and bucket don't match.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,5264,VBox,TCN_justification,That frog has the smallest cup%2C so it should have the easiest time filling it's cup. However even with the smallest cup that frog couldn't fill it so it's Frida.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4183,VBox,TRP_justification,The first bear is the smallest bear so he should have the hardest time reaching an apple.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10002,VBox,FSP_justification,The second kangaroo is Joey because he's the middle child by size so he should be getting the medium backpack.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,3835,VBox,TRN_justification,The third caterpillar is the largest so he should have the easiest time reaching a book%2C but even he couldn't do reach.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3159,VBox,TWP_justification,The smallest elephant is lifting the same sized pumpkin as the other two elephants%2C which is an impressive show of strength.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4061,VBox,FMP_justification,That monkey has a yellow hat that would match the yellow chair.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3378,VBox,TFN_justification,The smallest mouse should have the easiest time fitting through the hole%2C but even the smallest mouse%2C Mary%2C couldn't fit.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,3561,VBox,TFP_justification,The largest panda has the largest feet so should therefore have the hardest time fitting into the same sized socks.
+1525226353,208753d9d7de6644a2b7d3da44ef14a2,A99XFZJQZBRU7,24,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,5447,VBox,FSN_justification,That turtle is Millie because the hats are given out based on size%2C and the second turtle is the second smallest turtle%2C which corresponds to the only yellow hat.
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,9927,,,
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,8211,VBox,TRP_justification,because he is the shortest and the way the question was phrased it makes sense that he would be benny
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,9711,VBox,TFN_justification,because if anyone would be able to fit it should be the smallest%2C mary
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,6639,VBox,FMN_justification,his bucket is green and his shell is pink%2C a mismatch
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,6177,VBox,TFP_justification,because he is the biggest and the socks fit him which could have been an issue
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,15,neg,5,VBox,Who is Henrietta?,NULL,NULL,10003,VBox,TWN_justification,Since she is the biggest she shouuld be able to pick up the bowling bowl%2C but couldn't as implied.
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,9874,VBox,FSN_justification,the middle sized daughter would get the medium hat
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10000,VBox,TCP_justification,Sammy has the smallest basket and as implied still was able to fill the basket
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,6485,VBox,TRN_justification,because as the tallest it is implied that she could and should reach the bookshelf that is tall
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,6878,VBox,FSP_justification,because he is medium sized and the backpack matches his size
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5247,VBox,TWP_justification,It is implied that because he is small he might not be able to but was by the story.
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,6487,VBox,TCN_justification,because she has the smallest cup it would seem that she should be able to fill it up
+1525239430,6ead26033fc97babde35f4177dd9f91a,A34FOMRRI5KYCY,28,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6247,VBox,FMP_justification,marcus would be wearing the yellow hat as is #2 monkey is
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,2436,,,
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,8498,VBox,TFP_justification,it implies he is large
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,6177,VBox,TWN_justification,it implies he is the biggest and strongest 
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10001,VBox,FMP_justification,becayse he is wearing a yellow hat
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,2905,VBox,TRP_justification,it implies he is the smallest 
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,because the cup is the smallest
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,14,fill,4,VBox,Who is Carl?,NULL,NULL,10002,VBox,FMN_justification,because the shell and bucket dont match
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,5321,VBox,TWP_justification,it implies he is the weakest and smallest
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,5544,VBox,TRN_justification,it implies the biggest cant reach a book. 
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,1657,VBox,FSP_justification,it implies he is the middle
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,1536,VBox,TCP_justification,it implies he has the largest basket%0A
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,3058,VBox,TFN_justification,it implies he is the smallest
+1525249221,0e9d19181155ca5b09bc39dc6344eb40,A1USDMJVT10CE4,26,male,yes,,17,fill,7,VBox,Who is Millie?,3,0,5142,VBox,FSN_justification,it implies he did not get purple 
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,7908,,,
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6153,VBox,FMP_justification,Marcus is wearing the yellow hat which would match the chair he chose.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,8724,VBox,TWN_justification,Henrietta is the largest (and presumably the strongest).
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,7017,VBox,TRP_justification,He is the smallest and would have the most difficulty reaching a high branch.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10001,VBox,FSP_justification,Joey is the medium sized kangaroo.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,6542,VBox,TRN_justification,Caterpillar 3 is the tallest.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,4642,VBox,TFP_justification,Franky is the largest.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,5681,VBox,FMN_justification,This is the only crab whose shell and bucket don't match.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,8271,VBox,TCN_justification,They have the smallest cup of the three.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,8260,VBox,TCP_justification,Sammy's basket is the largest and takes more effort to fill.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,9999,VBox,FSN_justification,#2 is Millie because the yellow has is congruent to her size.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,4673,VBox,TFN_justification,Mary would be the smallest because it would be easiest for the smallest to fit in the hole.
+1525218645,8252e8ae1b3a18c550cba432c07b2fec,AM4RUMMB8CE8L,28,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4794,VBox,TWP_justification,Rufus is #1 because it is tiniest.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6522,,,
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6758,VBox,FMN_justification,His shell is pink and the bucket is green.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,6141,VBox,TCN_justification,Frida has the biggest cup and it wasn't big enough to hold the marbles.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5294,VBox,TFP_justification,Franky is the biggest and was still able to fit into the socks.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5343,VBox,FMP_justification,That monkey has a yellow hat.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4969,VBox,TFN_justification,That mouse is the smallest one and wasn't able to fit.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,3998,VBox,TRP_justification,That bear is the shortest and was able to reach the tree.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7287,VBox,FSP_justification,That kangaroo is not the largest or smallest.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10002,VBox,TRN_justification,That caterpillar is the tallest one and still can't reach it.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5120,VBox,TCP_justification,That squirrel has the largest basket.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,5887,VBox,FSN_justification,That turtle is the medium size and that hat is yellow.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5927,VBox,TWN_justification,That bunny is the largest and strongest.
+1525236280,772a849acf2e8a7a5cdd37685bb480f1,A1NYI79LUIBOTP,23,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4569,VBox,TWP_justification,That elephant is the smallest one.
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,11,practice,1,VBox,Who is Donny?,2,1,4654,,,
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4276,VBox,TRN_justification,"because ""even jessiepillar"" implies she should have had the best chance of reaching%2C being the tallest."
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,20,pos,10,VBox,Who is Benny?,1,1,3845,VBox,TRP_justification,it's implied that even though he's the shortest%2C he could still reach one
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6023,VBox,FMP_justification,because it's wearing the yellow hat which would match the yellow chair
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,3210,VBox,TWN_justification,it's implied that even the largest bunny couldn't pick up the ball due to the weight
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5165,VBox,TCP_justification,it's implied that even the largest basket (which would take the most effort to fill) was filled.
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,14,fill,4,VBox,Who is Carl?,2,1,4410,VBox,FMN_justification,because his shell is pink and his bucket is green so they don't match
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,12,neg,2,VBox,Who is Mary?,1,1,3226,VBox,TFN_justification,implied that even the smallest couldn't fit into the hole and mary is smallest.
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,19,pos,9,VBox,Who is Franky?,3,1,9958,VBox,TFP_justification,beecuase he's the largest and the socks still managed to fit him%2C although there's a posibility franky is number 1
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,21,fill,11,VBox,Who is Joey?,2,1,8855,VBox,FSP_justification,it's implied that the backpacks would match the size of the kangaroos and joey is the middle sized
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,16,neg,6,VBox,Who is Frida?,1,1,5576,VBox,TCN_justification,it's implied that the smallest cup couldn't get filled because it should be the easiest to fill
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,22,pos,12,VBox,Who is Rufus?,1,1,4143,VBox,TWP_justification,it's implied that even the smallest was able to lift it since that's surprising.
+1525797844,6d03cfb05d518c9f81f127e5b980f424,A3GEL5PWFIK05S,29,female,yes,,17,fill,7,VBox,Who is Millie?,2,1,6460,VBox,FSN_justification,because she got the yellow hat%2C and the hats are sized to match the turtles and the yellow hat is the middle size and so is the turtle 2
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,5556,,,
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10000,VBox,TCP_justification,"1 is sammy%2C it went too quick. I feel that he is Sammy because he has the smallest basket and they used the term ""Even""."
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,8052,VBox,TCN_justification,She has the smallest cup
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,6156,VBox,FMP_justification,The yellow chair matches his party hat.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,2906,VBox,TFP_justification,He is the largest of the group%2C implying that even he can fit into the same sized socks.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4138,VBox,TRN_justification,She is the largest%2C implying that she wasn't able to even reach the book.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,8296,VBox,FSP_justification,She got the medium backpack to give to the medium kangaroo.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4198,VBox,TRP_justification,All of them can reach but he is the shortest so we'd guess that he couldn't reach.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4716,VBox,TFN_justification,She's the smallest so we would assume that she could fit but she couldn't.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,9148,VBox,FSN_justification,The middle hat is the only one that is a different color so I assume that it belongs to the middle turtle.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3580,VBox,TWP_justification,He is the smallest so we assume that he couldn't carry the weight of the pumpkin but he can just the same as the rest of them.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4524,VBox,TWN_justification,I'm assuming Henrietta is 3 because she is the biggest one yet is still unable to pick up a bowling ball.
+1525795382,28bb18b7aa8093fe2e417332397666ff,A30W987G9S6F0G,28,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6602,VBox,FMN_justification,His shell is the only one that doesn't match its bucket.
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,4718,,,
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5452,VBox,TFP_justification,the small socks were able to stretch and fit the large feet of Franky
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,5386,VBox,FMP_justification,yellow hat matches the yellow chair
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,1,0,5011,VBox,TRN_justification,the shortest%2C can't reach
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4772,VBox,TRP_justification,It was surprising that the short bear could reach it. Benny must be the shortest. 
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6932,VBox,FMN_justification,different color of shell and bucket
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,4346,VBox,TFN_justification,implies that even the smallest mouse can't fit%2C so Mary must be the smallest
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,5032,VBox,TCP_justification,Sammy had the biggest basket and there was enough acorns to even fill this large container
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,6877,VBox,FSN_justification,the turtle got the yellow hat
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,4783,VBox,TCN_justification,not enough marbles to even fill up Frida's small cup
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3539,VBox,TWP_justification,the smallest elephant was even able to lift it%2C so Rufus must be the smallest
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7317,VBox,FSP_justification,The middle kangaroo probably received the medium sized backpack
+1525800758,309bd8a58b3f4705efad63dc266565c2,A3D3NEQ158WUB0,38,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4291,VBox,TWN_justification,Implies that largest rabbit is the strongest and that even it can't pick up the ball. So Henrietta must be the largest.
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,5389,,,
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,5985,VBox,TFN_justification,She was the smallest one
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,4692,VBox,TRP_justification,He was the smallest one
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10000,VBox,FMP_justification,He has a yellow hat
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,16,neg,6,VBox,Who is Frida?,1,1,8074,VBox,TCN_justification,She has the smallest cup
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,23,pos,13,VBox,Who is Sammy?,1,0,3675,VBox,TCP_justification,Has the smallest basket
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,4398,VBox,FSP_justification,He is the medium child
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4686,VBox,TRN_justification,The tallest one that can't reach it
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,3785,VBox,TFP_justification,The biggest panda
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,5925,VBox,FSN_justification,She is the medium size turtle
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,4133,VBox,TWN_justification,The biggest bunny
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3594,VBox,TWP_justification,smallest elephant
+1525796323,0960ccddcfd579994f402440cea289d3,ALZVG5501Y5IX,24,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,6169,VBox,FMN_justification,Only crab that hasn't have a matching shell
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,9242,,,
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,12,neg,2,VBox,Who is Mary?,1,1,8362,VBox,TFN_justification,Because they look sad
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,21,fill,11,VBox,Who is Joey?,2,1,7139,VBox,FSP_justification,medium sized
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,20,pos,10,VBox,Who is Benny?,NULL,NULL,10000,VBox,TRP_justification,1 is benny because hes the smallest and was able to reach up
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,5493,VBox,TWN_justification,The big bunny should be strongest 
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,9498,VBox,FMP_justification,both are yellow 
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,8245,VBox,TFP_justification,they were all same sized but the biggest panda could fit as well
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10997,VBox,TRN_justification,because the biggest catipillar should have long reach than the others and has a higher chance of reaching the top
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,17,fill,7,VBox,Who is Millie?,NULL,NULL,10001,VBox,FSN_justification,2 is millie because the sizes are according
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,23,pos,13,VBox,Who is Sammy?,NULL,NULL,10001,VBox,TCP_justification,3 is sammy because he has a biggest basket which might take longer to fill
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,4722,VBox,TCN_justification,The biggest cup couldn't contain all the marbles
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,8885,VBox,FMN_justification,the bucket is green but the shell is pink
+1525805440,40b961421ff5e0fe1406b33f6eb1f201,A2E5PZUD6W4OA1,27,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3987,VBox,TWP_justification,the pumpkins were all same size but the small elephant was able to move it as well 
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,11,practice,1,VBox,Who is Donny?,2,1,6634,,,
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,21,fill,11,VBox,Who is Joey?,NULL,NULL,10000,VBox,FSP_justification,He is the middle one
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,16,neg,6,VBox,Who is Frida?,3,0,4706,VBox,TCN_justification,She had the largest cup and could fill it all.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,19,pos,9,VBox,Who is Franky?,3,1,5553,VBox,TFP_justification,He is the biggest
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,17,fill,7,VBox,Who is Millie?,2,1,6865,VBox,FSN_justification,It looks like the hat would fit her.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,15,neg,5,VBox,Who is Henrietta?,3,1,7890,VBox,TWN_justification,She seems the biggest and strongest.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,22,pos,12,VBox,Who is Rufus?,1,1,3590,VBox,TWP_justification,He was the smallest.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,18,fill,8,VBox,Who is Marcus?,2,1,4538,VBox,FMP_justification,He is wearing a yellow hat.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,12,neg,2,VBox,Who is Mary?,3,0,3978,VBox,TFN_justification,I meant #1%2C the smallest should have fit.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,20,pos,10,VBox,Who is Benny?,1,1,6266,VBox,TRP_justification,He is the shortest.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,14,fill,4,VBox,Who is Carl?,2,1,5122,VBox,FMN_justification,His pink shell did not match the green bucket.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,13,neg,3,VBox,Who is Jessiepillar?,3,1,4171,VBox,TRN_justification,She was the longest%2C but could not reach the shelf.
+1525799278,897f299c2f251e279544553036d25791,A14HW8I4RYHNC4,55,male,yes,,23,pos,13,VBox,Who is Sammy?,3,1,4396,VBox,TCP_justification,He had the biggest basket.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,11,practice,1,VBox,Who is Donny?,2,1,7375,,,
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,22,pos,12,VBox,Who is Rufus?,1,1,4983,VBox,TWP_justification,He is the smallest.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,18,fill,8,VBox,Who is Marcus?,NULL,NULL,10052,VBox,FMP_justification,The last question was #2%2C He is the middle sized monkey.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,15,neg,5,VBox,Who is Henrietta?,3,1,8688,VBox,TWN_justification,She is the largest bunny.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,23,pos,13,VBox,Who is Sammy?,1,0,8888,VBox,TCP_justification,He is the smallest squirrel.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,14,fill,4,VBox,Who is Carl?,NULL,NULL,10000,VBox,FMN_justification,The last answer was 2%2C Carl is the one with the non-mathcing basket.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,16,neg,6,VBox,Who is Frida?,NULL,NULL,10001,VBox,TCN_justification,The last answer 1%2C Frida has the smallest cup.  
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,20,pos,10,VBox,Who is Benny?,3,0,5257,VBox,TRP_justification,The last answer should be 1%2C not 3 as I indicated.  Benny is the shortest. 
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,21,fill,11,VBox,Who is Joey?,2,1,8525,VBox,FSP_justification,Because he is the medium-sized kangaroo.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,12,neg,2,VBox,Who is Mary?,1,1,6687,VBox,TFN_justification,Mary is the smallest mouse.
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,19,pos,9,VBox,Who is Franky?,3,1,6202,VBox,TFP_justification,Franky is the biggest panda bear. 
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,17,fill,7,VBox,Who is Millie?,NULL,NULL,10000,VBox,FSN_justification,The last answer was 2%2C that is the medium-sized hat for the medium-sized turtle. 
+1525809633,d4b84abbac5b09827752cc90940e9890,A3POD149IG0DIW,34,female,yes,Yes%2C the paged moved to fast to select some of the animals.  Please see comments for the correct selections. ,13,neg,3,VBox,Who is Jessiepillar?,NULL,NULL,10001,VBox,TRN_justification,The last answer was 3%2C Jessiepillar is the tallest.

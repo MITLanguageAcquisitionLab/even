@@ -1,0 +1,1560 @@
+---
+title: "Even code"
+output:
+  html_document:
+    df_print: paged
+---
+
+Loading required packages:
+
+```{r}
+library(plyr)
+library(ggplot2)
+```
+
+Loading MCMCglmm 
+```{r}
+library(MCMCglmm)
+library(parallel)
+library(coda)
+```
+
+Import data from files
+
+```{r}
+mondf <- function(d1, d2) {
+  if (!requireNamespace("lubridate", quietly = TRUE)) {
+    stop("lubridate needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+  library(lubridate)
+  
+  monnb <- function(d) { lt <- as.POSIXlt(as.Date(d, origin="1900-01-01")); lt$year*12 + lt$mon }
+  monnb(d2) - monnb(d1)
+}
+
+exp1_data <- read.csv("../data/exp1-child/exp1-child.csv", header=TRUE, na.strings="")
+exp2_data <- read.csv("../data/exp2-child/exp2-child.csv", header=TRUE, na.strings="")
+
+clean_data <- function(experiment, halved, filler_halved, filler_acc, ignore_kanga=FALSE) {
+  # get data from the right experiment, do exclusions
+  if (experiment == 1) unprocessed_data = subset(exp1_data, subject != 21 & subject != 37 & subject != 14)
+  if (experiment == 2) unprocessed_data = subset(exp2_data, age_group != "6" & is.na(exclude) & is.na(exclude2) & is.na(exclude3))
+  
+  data = unprocessed_data
+  
+  # halve the data, if needed
+  if (halved == "first_half")   data = subset(data, item < 7)
+  else if (halved == "second_half") data = subset(data, item >= 7) 
+  
+  #change experiment name
+  data$experiment = paste("Exp", as.character(experiment))
+  
+  #calculate months old
+  data$month <- mondf(data$DOB, data$DOT)
+  
+  #Age group to text
+  data$age_group <- as.character(data$age_group)
+  
+  #add opposite/middle columns
+  data$opposite <- ifelse(data$response_type=="opposite", 1, 0)
+  data$middle <- ifelse(data$response_type=="middle", 1, 0)
+  
+  #add relationship column
+  data$relationship = ifelse(data$label=="target", ifelse(is.element(data$story, c("reach", "weight")), "direct", "inverse"), "")
+  data$scenario = paste(substr(data$condition, 1, 2), substr(data$condition, 4,4), sep="")
+  
+  #do we calculate the filler accuracy on the halved data or on all the data?
+  if (filler_halved == TRUE) {
+    filler_data <- subset(data, label=="filler")
+  }
+  else {
+    filler_data <- subset(unprocessed_data, label=="filler")
+  }
+  
+  #do we ignore the kangaroo story?
+  if (ignore_kanga == TRUE) {
+    filler_data <- subset(filler_data, condition != "FSP")
+  }
+    
+  #calculate filler accuracy
+  filler.accuracy <- ddply(filler_data, .(subject), summarise, filler.accuracy = mean(correct, na.rm=TRUE))
+  data <- merge(data, filler.accuracy)
+  
+  #filter out those who scored less than filler_acc
+  data$good.acc <- ifelse(data$filler.accuracy >= filler_acc, 1, 0)
+  filtered_data <- subset(data, good.acc == 1)
+  
+  #calculate means and error bars
+  al.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(correct, na.rm=TRUE))
+  al.sd <- ddply(al.accuracy, .(age_group, polarity), summarise, al_sd=sd(accuracy, na.rm=TRUE), al_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  middle.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(middle, na.rm=TRUE))
+  middle.sd <- ddply(middle.accuracy, .(age_group, polarity), summarise, mid_sd=sd(accuracy, na.rm=TRUE), mid_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  opposite.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(opposite, na.rm=TRUE))
+  opposite.sd <- ddply(opposite.accuracy, .(age_group, polarity), summarise, opp_sd=sd(accuracy, na.rm=TRUE), opp_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  #merge into data
+  filtered_data <- merge(filtered_data, al.sd)
+  filtered_data <- merge(filtered_data, middle.sd)
+  filtered_data <- merge(filtered_data, opposite.sd)
+  filtered_data <- merge(filtered_data, filler.accuracy)
+  
+  filtered_data$age_group <- as.factor(filtered_data$age_group)
+  filtered_data$subject <- as.factor(filtered_data$subject)
+  
+  return(filtered_data)
+  
+}
+
+clean.data.all.exp1 <- clean_data(experiment=1, halved="all", filler_halved=FALSE, filler_acc=0.75)
+clean.data.first_half.exp1 <- clean_data(experiment=1, halved="first_half", filler_halved=FALSE, filler_acc=0.1)
+clean.data.first_half.exp2 <- clean_data(experiment=2, halved="first_half", filler_halved=FALSE, filler_acc=0.75)
+clean.data.second_half.exp2 <- clean_data(experiment=2, halved="second_half", filler_halved=FALSE, filler_acc=0.75)
+clean.data.all.exp2 <- clean_data(experiment=2, halved="all", filler_halved=FALSE, filler_acc=0.75)
+
+```
+
+Helper functions
+
+```{r}
+targ <- function(data) { 
+  
+  subsetted <- subset(data, label=="target")
+  
+  subsetted$midresponse <- ifelse(subsetted$response_type=="middle", 1,0)
+  subsetted$mostlikely <- ifelse(subsetted$polarity=="neg" & subsetted$response_type == "adult-like", 1, ifelse(subsetted$polarity=="pos" & subsetted$response_type == "opposite", 1,0))
+  subsetted$leastlikely <- ifelse(subsetted$polarity=="neg" & subsetted$response_type=="opposite", 1, ifelse(subsetted$polarity=="pos" & subsetted$response_type == "adult-like", 1, 0))
+  
+  return(droplevels(subsetted))
+}
+```
+
+** Experiment 1 **
+
+Analysis for first experiment with MCMCglmm:
+
+```{r}
+indata_exp1 <- subset(clean.data.first_half.exp1, response_type %in% c("adult-like", "opposite", "middle"))
+
+chisq.test(table(targ(subset(indata_exp1, age_group == 3))$response_type))
+chisq.test(table(targ(subset(indata_exp1, age_group == 4))$response_type))
+chisq.test(table(targ(subset(indata_exp1, age_group == 5))$response_type))
+chisq.test(table(targ(subset(indata_exp1, age_group == 6))$response_type))
+
+
+```
+Based on section 5.2 of https://cran.r-project.org/web/packages/MCMCglmm/vignettes/CourseNotes.pdf as well as https://hlplab.wordpress.com/2009/05/07/multinomial-random-effects-models-in-r/ and http://www.natalialevshina.com/Documents/MCMCglmm_Tutorial.pdf https://github.com/tmalsburg/MCMCglmm-intro
+
+Prior: "For reasons that will become clearer later I like to work with the residual covariance matrix 1/J * (I + J) where I and J are J − 1 dimensional identity and unit matrices, respectively."
+
+response_type: {"adult-like", "opposite", "middle"}
+
+-1 tells the model not to estimate a global intercept (this basically makes multinomial models easy to interpret)
+
++ trait tells the model to estimate an intercept by response_type
+
+trait:(polarity + age_group)^2 all two-way interactions, as well as one-way interactions, all interacted with the different response types.
+
+The mclapply function is essentially running 4 models in parallel. The point of this is to be able to compare the chains after the fact to see if they converge on the same values. This serves as a convergence test.
+
+```{r}
+IJ <- (1/3) * (diag(2) + matrix(1,2,2))
+prior.MC <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2)))
+
+exp1_ag_fixed_formula <- formula(response_type ~ -1 + trait + trait:(polarity + age_group)^2)
+exp1_m_fixed_formula <- formula(response_type ~ -1 + trait + trait:(polarity + month)^2)
+exp1_random_formula <- formula(~ us(trait):subject + us(trait):condition)
+
+set.seed(1)
+
+model_MC_exp1 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = exp1_ag_fixed_formula,
+                     random = exp1_random_formula,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata_exp1),
+                     prior=prior.MC,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+
+model_MC_exp1_month <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = exp1_m_fixed_formula,
+                     random = exp1_random_formula,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata_exp1),
+                     prior=prior.MC,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+  }, mc.cores=4)
+                     
+
+                     
+```
+Here, we're running something known as the Gelman-Rubin diagnostic, which basically asks how similar all four different Markov chains are. It gives you a value, the PSRF, which asks, if you were to keep running this chain, how many times bigger could this value get? The closer that the PSRF is to 1, the more confident we can be that the model has converged. As we can see, our chains are basically identical, which gives us a good deal of confidence that we can trust the results of this model.
+
+```{r}
+model_MC_exp1_diag <- lapply(model_MC_exp1, function(m) m$Sol)
+model_MC_exp1_diag <- do.call(mcmc.list, model_MC_exp1_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp1_diag, auto.layout=F)
+gelman.diag(model_MC_exp1_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp1_diag, ask=F, auto.layout=F)
+
+```
+Now we do the same for the month model.
+```{r}
+model_MC_exp1_month_diag <- lapply(model_MC_exp1_month, function(m) m$Sol)
+model_MC_exp1_month_diag <- do.call(mcmc.list, model_MC_exp1_month_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp1_month_diag, auto.layout=F)
+gelman.diag(model_MC_exp1_month_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp1_month_diag, ask=F, auto.layout=F)
+
+
+
+```
+```{r}
+plot.estimates <- function(x) {
+  if (class(x) != "summary.mcmc")
+    x <- summary(x)
+  n <- dim(x$statistics)[1]
+  par(mar=c(2, 25, 4, 1))
+  plot(x$statistics[,1], n:1,
+       yaxt="n", ylab="",
+       xlim=range(x$quantiles)*1.2,
+       pch=19,
+       main="Posterior means and 95% credible intervals")
+  grid()
+  axis(2, at=n:1, rownames(x$statistics), las=2)
+  arrows(x$quantiles[,1], n:1, x$quantiles[,5], n:1, code=0)
+  abline(v=0, lty=2)
+}
+
+plot.estimates(model_MC_exp1_diag)
+plot.estimates(model_MC_exp1_month_diag)
+
+summary(model_MC_exp1_diag)
+summary(model_MC_exp1_month_diag)
+```
+
+
+
+Analysis for second experiment
+```{r}
+indata_exp2 <- subset(clean.data.all.exp2, response_type %in% c("adult-like", "opposite", "middle"))
+
+chisq.test(table(targ(subset(indata_exp2, age_group == 3))$response_type))
+chisq.test(table(targ(subset(indata_exp2, age_group == 4))$response_type))
+chisq.test(table(targ(subset(indata_exp2, age_group == 5))$response_type))
+
+``` 
+
+```{r}
+IJ <- (1/3) * (diag(2) + matrix(1,2, 2))
+prior.MC2 <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2),
+                        G3=list(V        = diag(2),
+                                n        = 2)))
+
+
+model_MC_exp2 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + order + age_group)^3,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+
+model_MC_exp2_month <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + order + month)^3,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+                     
+```
+Running convergence diagnostics for this model:
+```{r}
+model_MC_exp2_diag <- lapply(model_MC_exp2, function(m) m$Sol)
+model_MC_exp2_diag <- do.call(mcmc.list, model_MC_exp2_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_diag, auto.layout=F)
+gelman.diag(model_MC_exp2_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_diag, ask=F, auto.layout=F)
+
+
+
+```
+Now we do the same for the month model.
+```{r}
+model_MC_exp2_month_diag <- lapply(model_MC_exp2_month, function(m) m$Sol)
+model_MC_exp2_month_diag <- do.call(mcmc.list, model_MC_exp2_month_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_month_diag, auto.layout=F)
+gelman.diag(model_MC_exp2_month_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_month_diag, ask=F, auto.layout=F)
+
+
+
+```
+
+
+```{r}
+
+plot.estimates(model_MC_exp2_diag)
+plot.estimates(model_MC_exp2_month_diag)
+
+summary(model_MC_exp2_diag)
+summary(model_MC_exp2_month_diag)
+```
+```{r}
+model_MC_exp2_att2 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + age_group)^2 + trait:order,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+
+model_MC_exp2_month_att2 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + month)^2 + trait:order,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+
+
+```{r}
+model_MC_exp2_diag_att2 <- lapply(model_MC_exp2_att2, function(m) m$Sol)
+model_MC_exp2_diag_att2 <- do.call(mcmc.list, model_MC_exp2_diag_att2)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_diag_att2, auto.layout=F)
+gelman.diag(model_MC_exp2_diag_att2)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_diag_att2, ask=F, auto.layout=F)
+
+
+```
+
+
+
+```{r}
+plot.estimates(model_MC_exp2_diag_att2)
+
+summary(model_MC_exp2_diag_att2)
+```
+```{r}
+model_MC_exp2_att3 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + order + age_group)^2,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+model_MC_exp2_month_att3 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = response_type ~ -1 + trait + trait:(polarity + order + month)^2,
+                     random = ~ us(trait):subject + us(trait):condition + us(order):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata),
+                     prior=prior.MC2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+
+```{r}
+model_MC_exp2_diag_att3 <- lapply(model_MC_exp2_att3, function(m) m$Sol)
+model_MC_exp2_diag_att3 <- do.call(mcmc.list, model_MC_exp2_diag_att3)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_diag_att3, auto.layout=F)
+gelman.diag(model_MC_exp2_diag_att3)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_diag_att3, ask=F, auto.layout=F)
+```
+
+```{r}
+plot.estimates(model_MC_exp2_diag_att3)
+
+summary(model_MC_exp2_diag_att3)
+```
+
+```{r}
+model_MC_exp2_month_diag_att3 <- lapply(model_MC_exp2_month_att3, function(m) m$Sol)
+model_MC_exp2_month_diag_att3 <- do.call(mcmc.list, model_MC_exp2_month_diag_att3)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_month_diag_att3, auto.layout=F)
+gelman.diag(model_MC_exp2_month_diag_att3)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_month_diag_att3, ask=F, auto.layout=F)
+
+
+```
+
+```{r}
+plot.estimates(model_MC_exp2_month_diag_att3)
+
+summary(model_MC_exp2_month_diag_att3)
+```
+
+Now, rescaling intercepts/coefficients:
+
+
+```{r}
+c2 <- (16 * sqrt(3)/(15 * pi))^2
+Delta <- cbind(c(-1, 1, 0), c(-1, 0, 1))
+D <- ginv(Delta %*% t(Delta)) %*% Delta
+bind_mcmc = function(x) {
+  do.call(rbind.data.frame, x)
+}
+
+model_MC_exp1_combined <- bind_mcmc(model_MC_exp1_diag)
+model_MC_exp2_combined <- bind_mcmc(model_MC_exp2_diag_att3)
+
+rescale = function(model, int) {
+  rescaled <- t(apply(model[, int], 1, function(x) {
+  D %*% (x/sqrt(1 + c2 * diag(IJ)))
+}))
+  colnames(rescaled) <- c("adult", "middle", "opposite")
+  return(rescaled)
+}
+
+exp1_int <- rescale(model_MC_exp1_combined, 1:2)
+
+exp1_pos <- rescale(model_MC_exp1_combined, 3:4)
+
+exp1_age_4 <- rescale(model_MC_exp1_combined, 5:6)
+
+exp1_age_5 <- rescale(model_MC_exp1_combined, 7:8)
+
+exp1_age_6 <- rescale(model_MC_exp1_combined, 9:10)
+
+exp1_pos_age_4 <- rescale(model_MC_exp1_combined, 11:12)
+
+exp1_pos_age_5 <- rescale(model_MC_exp1_combined, 5:6)
+
+exp1_pos_age_6 <- rescale(model_MC_exp1_combined, 5:6)
+
+exp2_int <- rescale(model_MC_exp2_combined, 1:2)
+
+exp2_pos <- rescale(model_MC_exp2_combined, 3:4)
+
+exp2_orders <- rescale(model_MC_exp2_combined, 5:6)
+
+exp2_age_4 <- rescale(model_MC_exp2_combined, 7:8)
+
+exp2_age_5 <- rescale(model_MC_exp2_combined, 9:10)
+
+exp2_pos_orders <- rescale(model_MC_exp2_combined, 11:12)
+
+exp2_pos_age_4 <- rescale(model_MC_exp2_combined, 13:14)
+
+exp2_pos_age_5 <- rescale(model_MC_exp2_combined, 15:16)
+
+exp2_orders_age_4 <- rescale(model_MC_exp2_combined, 17:18)
+
+exp2_orders_age_5 <- rescale(model_MC_exp2_combined, 19:20)
+
+formula_exp1 = function(polarity, age) {
+  exp1_int + 
+    (polarity == "pos")*exp1_pos + 
+    (age == 4)*exp1_age_4 + 
+    (age == 5)*exp1_age_5 + 
+    (age == 6)*exp1_age_6 +
+    (age == 4)*(polarity == "pos")*exp1_pos_age_4 + 
+    (age == 5)*(polarity == "pos")*exp1_pos_age_5 + 
+    (age == 6)*(polarity == "pos")*exp1_pos_age_6
+}
+
+formula_exp2 = function(polarity, order, age) {
+  exp2_int + 
+    (polarity == "pos")*exp2_pos + 
+    (order == "s")*exp2_orders +
+    (age == 4)*exp2_age_4 + 
+    (age == 5)*exp2_age_5 + 
+    (age == 4)*(polarity == "pos")*exp2_pos_age_4 + 
+    (age == 5)*(polarity == "pos")*exp2_pos_age_5 + 
+    (age == 4)*(order == "s")*exp2_orders_age_4 + 
+    (age == 5)*(order == "s")*exp2_orders_age_5 + 
+    (order == "s")*(polarity == "pos")*exp2_pos_orders
+  }
+
+single_point = function(vars, prob=.95) {
+  mcmc <- mcmc(exp(vars)/rowSums(exp(vars)))
+  print(summary(mcmc))
+  HPDinterval(mcmc, prob)
+}
+
+var_difference = function(vars1, vars2, prob=.95){
+ mcmc <- mcmc((exp(vars1)/rowSums(exp(vars1))) - (exp(vars2)/rowSums(exp(vars2))))
+ print(summary(mcmc))
+ HPDinterval(mcmc, prob)
+}
+
+var_sums = function(..., prob=.95) {
+  vars <- list(...)
+  num <- Reduce("+", lapply(vars, function(x) { exp(x)  } ))
+  denom <- Reduce("+", lapply(vars, function(x) { rowSums(exp(x))  } ))
+  mcmc <- mcmc(num / denom)
+  print(summary(mcmc))
+  HPDinterval(mcmc, prob)
+}
+
+var_diff_sums = function(vars1, vars2, vars3, vars4, prob=.95) {
+  mcmc <- mcmc((exp(vars1) + exp(vars2))/(rowSums(exp(vars1)) + rowSums(exp(vars2)))
+               - (exp(vars3) + exp(vars4))/(rowSums(exp(vars3)) + rowSums(exp(vars4))))
+  print(summary(mcmc))
+  HPDinterval(mcmc, prob)
+}
+
+```
+Analysis of justifications
+```{r}
+IJ <- (1/3) * (diag(2) + matrix(1,2,2))
+prior.MC <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2)))
+
+exp1_just_fixed_formula <- formula(just_type ~ -1 + trait + trait:(response_type + polarity + age_group))
+exp1_just_random_formula <- formula(~ us(trait):subject + us(trait):condition)
+
+indata_exp1_just <- droplevels(subset(clean.data.first_half.exp1, response_type %in% c("adult-like", "opposite", "middle")))
+indata_exp1_just$just_type[is.na(indata_exp1_just$just_type)] <- "none"
+
+model_MC_exp1_just <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = exp1_just_fixed_formula,
+                     random = exp1_just_random_formula,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata_exp1_just),
+                     prior=prior.MC,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+```{r}
+
+model_MC_exp1_diag_just <- lapply(model_MC_exp1_just, function(m) m$Sol)
+model_MC_exp1_diag_just <- do.call(mcmc.list, model_MC_exp1_diag_just)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp1_diag_just, auto.layout=F)
+gelman.diag(model_MC_exp1_diag_just)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp1_diag_just, ask=F, auto.layout=F)
+```
+
+```{r}
+plot.estimates(model_MC_exp1_diag_just)
+
+summary(model_MC_exp1_diag_just)
+```
+
+```{r}
+c2 <- (16 * sqrt(3)/(15 * pi))^2
+Delta <- cbind(c(-1, 1, 0), c(-1, 0, 1))
+D <- ginv(Delta %*% t(Delta)) %*% Delta
+
+model_MC_exp1_just_combined <- bind_mcmc(model_MC_exp1_diag_just)
+
+rescale_just = function(model, int) {
+  rescaled <- t(apply(model[, int], 1, function(x) {
+  D %*% (x/sqrt(1 + c2 * diag(IJ)))
+}))
+  colnames(rescaled) <- c("none", "random", "scale")
+  return(rescaled)
+}
+
+exp1_just_int <- rescale_just(model_MC_exp1_just_combined, 1:2)
+exp1_just_middle <- rescale_just(model_MC_exp1_just_combined, 3:4)
+exp1_just_opposite <- rescale_just(model_MC_exp1_just_combined, 5:6)
+exp1_just_pos <- rescale_just(model_MC_exp1_just_combined, 7:8)
+exp1_just_4 <- rescale_just(model_MC_exp1_just_combined, 9:10)
+exp1_just_5 <- rescale_just(model_MC_exp1_just_combined, 11:12)
+exp1_just_6 <- rescale_just(model_MC_exp1_just_combined, 13:14)
+
+formula_exp1_just = function(polarity, response, age) {
+  exp1_just_int + 
+    (polarity == "pos")*exp1_just_pos + 
+    (response == "middle")*exp1_just_middle +
+    (response == "opposite")*exp1_just_opposite +
+    (age == 4)*exp1_just_4 + 
+    (age == 5)*exp1_just_5 + 
+    (age == 6)*exp1_just_6
+}
+
+
+gen_sums = function(...) {
+  vars <- list(...)
+  num <- Reduce("+", lapply(vars, function(x) { exp(x)  } ))
+  denom <- Reduce("+", lapply(vars, function(x) { rowSums(exp(x))  } ))
+  return(num/denom)
+}
+
+al <- gen_sums(formula_exp1_just(polarity="neg", response="adult", age=3), formula_exp1_just(polarity="pos", response="adult", age=3), formula_exp1_just(polarity="neg", response="adult", age=4), formula_exp1_just(polarity="pos", response="adult", age=4), formula_exp1_just(polarity="neg", response="adult", age=5), formula_exp1_just(polarity="pos", response="adult", age=5), formula_exp1_just(polarity="neg", response="adult", age=6), formula_exp1_just(polarity="pos", response="adult",  age=6))
+
+opp <- gen_sums(formula_exp1_just(polarity="pos", response="opposite", age=3), formula_exp1_just(polarity="neg", response="opposite", age=3), formula_exp1_just(polarity="neg", response="opposite", age=4), formula_exp1_just(polarity="pos", response="opposite", age=4), formula_exp1_just(polarity="neg", response="opposite", age=5), formula_exp1_just(polarity="pos", response="opposite", age=5), formula_exp1_just(polarity="neg", response="opposite", age=6), formula_exp1_just(polarity="pos", response="opposite",  age=6))
+
+mid <- gen_sums(formula_exp1_just(polarity="neg", response="middle", age=3), formula_exp1_just(polarity="pos", response="middle", age=3), formula_exp1_just(polarity="neg", response="middle", age=4), formula_exp1_just(polarity="pos", response="middle", age=4), formula_exp1_just(polarity="neg", response="middle", age=5), formula_exp1_just(polarity="pos", response="middle", age=5), formula_exp1_just(polarity="neg", response="middle", age=6), formula_exp1_just(polarity="pos", response="middle",  age=6))
+
+
+alopp <- mcmc(al - opp)
+almid <- mcmc(al - mid)
+oppmid <- mcmc(opp - mid)
+
+``` 
+Justifications Exp2
+```{r}
+
+exp2_justifications <- read.csv("../data/exp2-child/exp2-child-justifications.csv", header=TRUE, na.strings="")
+
+exp2_justifications <- merge(clean.data.all.exp2[,!(names(clean.data.all.exp2) == "just.type")], exp2_justifications)
+
+
+IJ <- (1/3) * (diag(2) + matrix(1,2,2))
+prior.MC <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2)))
+
+exp2_just_fixed_formula <- formula(just.type ~ -1 + trait + trait:(response_type + polarity + order + age_group))
+exp2_just_random_formula <- formula(~ us(trait):subject + us(trait):story)
+
+indata_exp2_just <- droplevels(subset(exp2_justifications, response_type %in% c("adult-like", "opposite", "middle")))
+levels(indata_exp2_just$just.type) <- c(levels(indata_exp2_just$just.type), "none")
+indata_exp2_just$just.type[is.na(indata_exp2_just$just.type)] <- "none"
+
+model_MC_exp2_just <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = exp2_just_fixed_formula,
+                     random = exp2_just_random_formula,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     data = targ(indata_exp2_just),
+                     prior=prior.MC,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+
+```{r}
+model_MC_exp2_diag_just <- lapply(model_MC_exp2_just, function(m) m$Sol)
+model_MC_exp2_diag_just <- do.call(mcmc.list, model_MC_exp2_diag_just)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_exp2_diag_just, auto.layout=F)
+gelman.diag(model_MC_exp2_diag_just)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_exp2_diag_just, ask=F, auto.layout=F)
+
+```
+
+```{r}
+c2 <- (16 * sqrt(3)/(15 * pi))^2
+Delta <- cbind(c(-1, 1, 0), c(-1, 0, 1))
+D <- ginv(Delta %*% t(Delta)) %*% Delta
+
+model_MC_exp2_just_combined <- bind_mcmc(model_MC_exp2_diag_just)
+
+rescale_just_exp2 = function(model, int) {
+  rescaled <- t(apply(model[, int], 1, function(x) {
+  D %*% (x/sqrt(1 + c2 * diag(IJ)))
+}))
+  colnames(rescaled) <- c("random", "scalar", "none")
+  return(rescaled)
+}
+
+exp2_just_int <- rescale_just_exp2(model_MC_exp2_just_combined, 1:2)
+exp2_just_middle <- rescale_just_exp2(model_MC_exp2_just_combined, 3:4)
+exp2_just_opposite <- rescale_just_exp2(model_MC_exp2_just_combined, 5:6)
+exp2_just_pos <- rescale_just_exp2(model_MC_exp2_just_combined, 7:8)
+exp2_just_order <- rescale_just_exp2(model_MC_exp2_just_combined, 9:10)
+exp2_just_4 <- rescale_just_exp2(model_MC_exp2_just_combined, 11:12)
+exp2_just_5 <- rescale_just_exp2(model_MC_exp2_just_combined, 13:14)
+
+formula_exp2_just = function(polarity, response, order="f", age) {
+  exp2_just_int + 
+    (polarity == "pos")*exp2_just_pos + 
+    (response == "middle")*exp2_just_middle +
+    (response == "opposite")*exp2_just_opposite +
+    (order == "s")*exp2_just_order +
+    (age == 4)*exp2_just_4 + 
+    (age == 5)*exp2_just_5 
+  }
+
+
+gen_sums = function(...) {
+  vars <- list(...)
+  num <- Reduce("+", lapply(vars, function(x) { exp(x)  } ))
+  denom <- Reduce("+", lapply(vars, function(x) { rowSums(exp(x))  } ))
+  return(num/denom)
+}
+
+al_exp2 <- gen_sums(formula_exp2_just(polarity="neg", response="adult", age=3), formula_exp2_just(polarity="pos", response="adult", age=3), formula_exp2_just(polarity="neg", response="adult", age=4), formula_exp2_just(polarity="pos", response="adult", age=4), formula_exp2_just(polarity="neg", response="adult", age=5), formula_exp2_just(polarity="pos", response="adult", age=5), formula_exp2_just(polarity="neg", response="adult", order="s", age=3), formula_exp2_just(polarity="pos", response="adult", order="s", age=3), formula_exp2_just(polarity="neg", response="adult", order="s", age=4), formula_exp2_just(polarity="pos", response="adult", order="s", age=4), formula_exp2_just(polarity="neg", response="adult", order="s", age=5), formula_exp2_just(polarity="pos", response="adult", order="s", age=5))
+
+opp_exp2 <- gen_sums(formula_exp2_just(polarity="pos", response="opposite", age=3), formula_exp2_just(polarity="neg", response="opposite", age=3), formula_exp2_just(polarity="neg", response="opposite", age=4), formula_exp2_just(polarity="pos", response="opposite", age=4), formula_exp2_just(polarity="neg", response="opposite", age=5), formula_exp2_just(polarity="pos", response="opposite", age=5), formula_exp2_just(polarity="pos", response="opposite", order="s", age=3), formula_exp2_just(polarity="neg", response="opposite", order="s", age=3), formula_exp2_just(polarity="neg", response="opposite", order="s", age=4), formula_exp2_just(polarity="pos", response="opposite", order="s", age=4), formula_exp2_just(polarity="neg", response="opposite", order="s", age=5), formula_exp2_just(polarity="pos", response="opposite", order="s", age=5))
+
+mid_exp2 <- gen_sums(formula_exp2_just(polarity="neg", response="middle", age=3), formula_exp2_just(polarity="pos", response="middle", age=3), formula_exp2_just(polarity="neg", response="middle", age=4), formula_exp2_just(polarity="pos", response="middle", age=4), formula_exp2_just(polarity="neg", response="middle", age=5), formula_exp2_just(polarity="pos", response="middle", age=5), formula_exp2_just(polarity="neg", response="middle", order="s", age=3), formula_exp2_just(polarity="pos", response="middle", order="s", age=3), formula_exp2_just(polarity="neg", response="middle", order="s", age=4), formula_exp2_just(polarity="pos", response="middle", order="s", age=4), formula_exp2_just(polarity="neg", response="middle", order="s", age=5), formula_exp2_just(polarity="pos", response="middle", order="s", age=5))
+
+
+alopp_exp2 <- mcmc(al_exp2 - opp_exp2)
+almid_exp2 <- mcmc(al_exp2 - mid_exp2)
+oppmid_exp2 <- mcmc(opp_exp2 - mid_exp2)
+```
+
+
+
+Analysis of adult data
+```{r}
+adult.data <- read.csv("../data/exp1-adult/exp1-adult.csv", header=TRUE, na.strings="NULL")
+
+
+
+# Participant exclusion criterion running function
+# Discuss principled participant exclusion criteria and age range before running this
+clean_adult_data <- function(data) {
+  
+  unprocessed_data <- subset(data, label != "practice")
+
+  #get just target data, filter out timeouts
+  filtered_data <- subset(unprocessed_data, (label=="pos" | label=="neg") & !is.na(correct))
+  
+  #filtered_data$age_group <- as.character(filtered_data$age_group)
+  
+  #add opposite/middle columns
+  #filtered_data$opposite <- ifelse(filtered_data$response_type=="opposite", 1, 0)
+  #filtered_data$middle <- ifelse(filtered_data$response_type=="middle", 1, 0)
+  
+  
+  
+  # accuracy check and exclusion of low-accuracy participants
+  # Accuracy criterion for inclusion in most experiments is 75% total filler accuracy (as there is only one filler condition)
+  # Accuracy criterion for inclusion in conjunction only is either 100% conjunction filler accuracy, or 50% conjunction filler accuracy and 75% total filler accuracy
+
+  target.accuracy <- ddply(filtered_data, .(WorkerId, label), summarise, target.accuracy=mean(correct, na.rm=TRUE))
+  filler.accuracy <- ddply(subset(unprocessed_data, label=="fill"), .(WorkerId), summarise, filler.accuracy = mean(correct, na.rm=TRUE))
+  
+  target.rt <- ddply(subset(filtered_data, responseTime < 9999), .(WorkerId, label), summarise, target.rt=mean(responseTime))
+  
+  
+  #al.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, al_sd=sd(correct, na.rm=TRUE), al_accuracy=mean(correct, na.rm=TRUE), numobvs=length(correct))
+  #middle.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, mid_sd=sd(middle, na.rm=TRUE), mid_accuracy=mean(middle, na.rm=TRUE))
+  #opposite.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, opp_sd=sd(opposite, na.rm=TRUE), opp_accuracy=mean(opposite, na.rm=TRUE))
+  
+  
+  #al.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(correct, na.rm=TRUE), numobvs=length())
+  #al.sd <- ddply(al.accuracy, .(age_group, polarity), summarise, al_se=sd(accuracy, na.rm=TRUE)/sqrt(al_sd=sd(accuracy, na.rm=TRUE), al_accuracy=mean(accuracy, na.rm=TRUE))
+
+
+  #middle.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(middle, na.rm=TRUE))
+  #middle.sd <- ddply(middle.accuracy, .(age_group, polarity), summarise, mid_sd=sd(accuracy, na.rm=TRUE), mid_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  #opposite.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(opposite, na.rm=TRUE))
+  #opposite.sd <- ddply(opposite.accuracy, .(age_group, polarity), summarise, opp_sd=sd(accuracy, na.rm=TRUE), opp_accuracy=mean(accuracy, na.rm=TRUE))
+  
+    
+  #unprocessed_data <- merge(unprocessed_data, overall.accuracy)
+  unprocessed_data <- merge(unprocessed_data, filler.accuracy)
+  unprocessed_data <- merge(unprocessed_data, target.accuracy)
+  unprocessed_data <- merge(unprocessed_data, target.rt)
+  
+  na.count <- ddply(filtered_data, .(WorkerId), summarise, na.count=sum(is.na(answer)))
+  one.count <- ddply(filtered_data, .(WorkerId), summarise, one.count=sum(answer=="1", na.rm=TRUE))
+  two.count <- ddply(filtered_data, .(WorkerId), summarise, two.count=sum(answer=="2", na.rm=TRUE))
+  three.count <- ddply(filtered_data, .(WorkerId), summarise, three.count=sum(answer=="3", na.rm=TRUE))
+
+  unprocessed_data <- merge(unprocessed_data, one.count)
+  unprocessed_data <- merge(unprocessed_data, two.count)
+  unprocessed_data <- merge(unprocessed_data, three.count)
+  unprocessed_data <- merge(unprocessed_data, na.count)
+  
+  # response type column
+  unprocessed_data$responseType <- ifelse(unprocessed_data$answer==2, "mid", ifelse(unprocessed_data$correct==1, "adultlike", "opposite"))
+  
+  # other measures
+  # log
+  unprocessed_data$logRT = log(unprocessed_data$responseTime)
+  
+  # z score
+  p.means <- aggregate(unprocessed_data$responseTime, list(WorkerId = unprocessed_data$WorkerId), mean)
+  colnames(p.means)[2] = "mean"
+  p.sds <- aggregate(unprocessed_data$responseTime, list(WorkerId = unprocessed_data$WorkerId), sd)
+  colnames(p.sds)[2] = "sd"
+  p.data <- merge(p.means, p.sds, by="WorkerId")
+  unprocessed_data <- merge(unprocessed_data, p.data, by="WorkerId")
+  unprocessed_data$zScore = (unprocessed_data$responseTime - unprocessed_data$mean)/unprocessed_data$sd
+  unprocessed_data$mean <- NULL
+  unprocessed_data$sd <- NULL
+
+  #percent.yes <- ddply(unprocessed_data, .(subject), summarise, percent.yes=mean(answer))
+  
+  #unprocessed_data <- merge(unprocessed_data, percent.yes)
+  
+  # Exclude bad participants
+  unprocessed_data$good.acc <- ifelse(unprocessed_data$filler.accuracy >= 0.65, 1, 0)
+  unprocessed_data$same.answer <- ifelse(unprocessed_data$one.count >= 7 |
+                              unprocessed_data$two.count >= 7 |
+                              unprocessed_data$three.count >= 7 |
+                              unprocessed_data$na.count >= 4, 1, 0)
+  
+  
+  # exclude bad participants
+  processed_data <- subset(unprocessed_data, good.acc == 1 & same.answer == 0)
+  
+  # insert a column for accuracy for each participant for each condition's accuracy
+  #condition.accuracy <- ddply(processed_data, .(subject, condition), summarise, condition.accuracy=mean(correct))
+  #processed_data <- merge(processed_data, condition.accuracy)
+  
+  
+  return(processed_data)
+  
+  
+  
+}
+
+clean.adult.data.exp1 <- clean_adult_data(adult.data)
+```
+Running RT analysis and response_type analysis on adult data.
+
+```{r}
+no_NA_exp1 <- droplevels(subset(clean.adult.data.exp1, !is.na(clean.adult.data.exp1$responseType)))
+
+no_NA_exp1$responseType <- as.factor(no_NA_exp1$responseType)
+
+model_MC_adult_exp1 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = logRT ~ (label + responseType)^2,
+                     random = ~ WorkerId + request,
+                     family = "gaussian",
+                     data = no_NA_exp1,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+Running diagnostics on chains
+
+```{r}
+model_MC_adult_exp1_diag <- lapply(model_MC_adult_exp1, function(m) m$Sol)
+model_MC_adult_exp1_diag <- do.call(mcmc.list, model_MC_adult_exp1_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_exp1_diag, auto.layout=F)
+gelman.diag(model_MC_adult_exp1_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_exp1_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+model_MC_adult_exp1_combined <- bind_mcmc(model_MC_adult_exp1_diag)
+
+adult_exp1_intercept <- model_MC_adult_exp1_combined[, 1]
+adult_exp1_pos <- model_MC_adult_exp1_combined[, 2]
+adult_exp1_mid <- model_MC_adult_exp1_combined[, 3]
+adult_exp1_opp <- model_MC_adult_exp1_combined[, 4]
+adult_exp1_posmid <- model_MC_adult_exp1_combined[, 5]
+adult_exp1_posopp <- model_MC_adult_exp1_combined[, 6]
+
+estimate_exp1 = function(polarity="neg", response_type="adult"){
+  return(adult_exp1_intercept + 
+         (polarity == "pos")*adult_exp1_pos +
+         (response_type == "mid")*adult_exp1_mid +
+         (response_type == "opp")*adult_exp1_opp +
+         (polarity == "pos")*(response_type == "mid")*adult_exp1_posmid +
+         (polarity == "pos")*(response_type == "opp")*adult_exp1_posopp)
+}                    
+```
+Modeling response_type
+
+```{r}
+IJ <- (1/3) * (diag(2) + matrix(1,2, 2))
+prior.MC_adult <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2)))
+
+
+model_MC_adult_response_exp1 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = responseType ~ -1 + trait + trait:label,
+                     random = ~ us(trait):WorkerId + us(trait):request,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     prior=prior.MC_adult,
+                     data = no_NA_exp1,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+Running diagnostics on chains
+
+```{r}
+model_MC_adult_response_exp1_diag <- lapply(model_MC_adult_response_exp1, function(m) m$Sol)
+model_MC_adult_response_exp1_diag <- do.call(mcmc.list, model_MC_adult_response_exp1_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_response_exp1_diag, auto.layout=F)
+gelman.diag(model_MC_adult_response_exp1_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_response_exp1_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+model_MC_adult_response_exp1_combined <- bind_mcmc(model_MC_adult_response_exp1_diag)
+
+adult_exp1_response_int <- rescale(model_MC_adult_response_exp1_combined, 1:2)
+
+adult_exp1_response_pos <- rescale(model_MC_adult_response_exp1_combined, 3:4)
+```
+
+
+```{r}
+clean_adult_data_exp2 <- function() {
+  
+  manual_excludes <- c("A3HZFB2JLF3JMY",  "A3W3VLPA3B5LJ7")
+  
+  `%ni%` <- Negate(`%in%`)
+  
+  # read in data
+  # Put in the path to the folder where your data lives
+  
+  #read in data
+  p1 <- rbind(read.csv("../data/exp2-adult/p1_batch1_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/p1_batch2_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/p1_batch3_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/p1_batch4_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/p1_batch5_results.csv", header=TRUE, na.strings="NULL"), read.csv("../data/exp2-adult/p1_batch6_results.csv", header=TRUE, na.strings="NULL"))
+  p1$order <- "posfirst_1"
+  
+  p2 <- rbind(read.csv("../data/exp2-adult/p2_batch1_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/p2_batch2_results.csv", header=TRUE, na.strings="NULL"))
+  p2$order <- "posfirst_2"
+  
+  n1 <- rbind(read.csv("../data/exp2-adult/n1_batch1_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n1_batch2_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n1_batch3_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n1_batch4_results.csv", header=TRUE, na.strings="NULL"))
+  n1$order <- "negfirst_1"
+  
+  n2 <- rbind(read.csv("../data/exp2-adult/n2_batch1_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n2_batch2_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n2_batch3_results.csv", header=TRUE, na.strings="NULL"),read.csv("../data/exp2-adult/n2_batch4_results.csv", header=TRUE, na.strings="NULL"), read.csv("../data/exp2-adult/n2_batch5_results.csv", header=TRUE, na.strings="NULL"))
+  n2$order <- "negfirst_2"
+  
+  
+  # bind these together at the beginning so that subject numbers don't overlap
+  rawresults <- rbind(p1, p2, n1, n2)
+  #rawresults <- rbind(p1,n1)
+  results <- rawresults[grep("[\\#]", rawresults$X., invert=T),] # filter out rows that start with # symbol
+  
+  colnames(results) <- c("timeReceived",	"md5Hash",	"ControllerName", "ItemNumber",	"ElementNumber",	"type",	"group",	"question", "response", "correct", "responseTime", "order")
+  
+  
+  # Assign subject numbers
+  subj.dataframe <- data.frame(unique(results[, 1:2])) # creates a dataframe out of the unique identifying info md5Hash and timeReceived (md5Hash is created using the IP address)
+  colnames(subj.dataframe) <- c("timeReceived",	"md5Hash")
+  subj.dataframe$Subject <- 1:nrow(subj.dataframe) # assigns subject numbers
+  
+  # Add WorkerId info (not actually produced by PennController but end up in the same columns)
+  z= subset(results, results$question=="WorkerId")[9] # take WorkerIds from the results sheet
+  subj.dataframe$WorkerId <- apply(z, 2, as.character) # add WorkerIds as strings
+  
+  colnames(subj.dataframe) <- c("timeReceived",	"md5Hash", "Subject", "WorkerId")
+  results <- merge(results, subj.dataframe, all.x=T) # puts the info back into the results for when we need it
+  
+  rm(z, subj.dataframe)
+  
+  
+  # add conditions
+  # Pretty sure I am doing this inside-out
+  condition.vec.p1 <- c("practice", "TFP", "TRP", "FMN", "TWP", "TCP", "FSN", "FMP", "TFN", "TRN", "FSP", "TWN", "TCN")
+  condition.vec.p2 <- c("practice", "TCP", "TWP", "FMN", "TRP", "TFP", "FSN", "FMP", "TCN", "TWN", "FSP", "TRN", "TFN")
+  condition.vec.n1 <- c("practice", "TFN", "TRN", "FMN", "TWN", "TCN", "FSN", "FMP", "TFP", "TRP", "FSP", "TWP", "TCP")
+  condition.vec.n2 <- c("practice", "TCN", "TWN", "FMN", "TRN", "TFN", "FSN", "FMP", "TCP", "TWP", "FSP", "TRP", "TFP")
+  conditions.dataframe <- data.frame("pos1"=condition.vec.p1, "pos2"=condition.vec.p2, "neg1"=condition.vec.n1, "neg2"=condition.vec.n2)
+  conditions.dataframe$group <- 1:13
+  rm(condition.vec.n1, condition.vec.n2, condition.vec.p1, condition.vec.p2)
+  
+  p1.cond <- conditions.dataframe[,c(1,5)]
+  colnames(p1.cond) <- c("condition", "group")
+  p2.cond <- conditions.dataframe[,c(2,5)]
+  colnames(p2.cond) <- c("condition", "group")
+  n1.cond <- conditions.dataframe[,c(3,5)]
+  colnames(n1.cond) <- c("condition", "group")
+  n2.cond <- conditions.dataframe[,c(4,5)]
+  colnames(n2.cond) <- c("condition", "group")
+  
+  # split them up to add conditions, then re-bind
+  # Yadav I apologize for this code
+  p1.results <- subset(results, order=="posfirst_1")
+  p1.results <- merge(p1.results, p1.cond, all.x=T)
+  p2.results <- subset(results, order=="posfirst_2")
+  p2.results <- merge(p2.results, p2.cond, all.x=T)
+  n1.results <- subset(results, order=="negfirst_1")
+  n1.results <- merge(n1.results, n1.cond, all.x=T)
+  n2.results <- subset(results, order=="negfirst_2")
+  n2.results <- merge(n2.results, n2.cond, all.x=T)
+  
+  allresults <- rbind(p1.results, p2.results, n1.results, n2.results)
+  allresults <- allresults[with(allresults, order(allresults$Subject, allresults$group)),]
+  
+  
+  # type of trial
+  fillerconds <- c("FMN", "FSN", "FMP", "FSP")
+  posconds <- c("TFP", "TRP", "TWP", "TCP", "FSP", "FMP")
+  negconds <- c("TFN", "TRN", "TWN", "TCN", "FSN", "FMN")
+  allresults$label <- ifelse(allresults$condition=="practice", "practice", 
+                             ifelse(allresults$condition %in% fillerconds, "filler", "target"))
+  allresults$polarity <- ifelse(allresults$condition %in% posconds, "pos", "neg")
+  
+  allresults$story <- ifelse(allresults$condition %in% c("TRP", "TRN"), "reach",
+                             ifelse(allresults$condition %in% c("TFP", "TFN"), "fit",
+                                    ifelse(allresults$condition %in% c("TWP", "TWN"), "lift",
+                                           ifelse(allresults$condition %in% c("TCP", "TCN"), "capacity", 
+                                                  ifelse(allresults$condition %in% c("FSN", "FSP"), "sizematch", 
+                                                         ifelse(allresults$condition %in% c("FMP", "FMN"), "colormatch",
+                                                                ifelse(allresults$condition == "practice", "practice", "error")))))))
+  
+  
+  rm(n1,n2,p1,p2,n1.cond,n1.results,n2.cond,n2.results,p1.cond,p1.results,p2.cond,p2.results, results,fillerconds,negconds,posconds, conditions.dataframe)
+  
+  just <- subset(allresults, grepl("justification", question))
+  justifications <- data.frame(just$WorkerId, just$response, just$condition)
+  colnames(justifications) = c("WorkerId", "justification", "condition")
+  nonjustifications <- subset(allresults, ! grepl("justification", question))
+  
+  allresults <- merge(justifications, nonjustifications)
+  
+  # exploring for cheaters
+  testingresults <- subset(allresults, label != "practice")
+  
+  testingresults$timeOut <- ifelse(!is.na(testingresults$responseTime) & testingresults$responseTime > 9999, 1, 0)
+  testingresults$middle <- ifelse(testingresults$response==2, 1, 0)
+  numtrials = length(unique(subset(allresults, Subject==1 & label!="practice")$group)) # 12
+  subject.accuracy <- ddply(testingresults, .(WorkerId), summarise, accuracy=mean(correct, na.rm=T), timeOut=sum(timeOut), timeOutPercent=(sum(timeOut)/numtrials), order=unique(order))
+  subject.accuracy = subject.accuracy[order(subject.accuracy$accuracy),]
+  numfillers = length(unique(subset(allresults, label == "filler")$group)) # 4
+  filler.subj.accuracy <- ddply(subset(testingresults, label=="filler"), .(WorkerId), summarise, filler.accuracy = mean(correct, na.rm=T), filler.timeOut=sum(timeOut), filler.timeOutPercent=(sum(timeOut)/numfillers), order=unique(order))
+  filler.subj.accuracy <- filler.subj.accuracy[order(filler.subj.accuracy$filler.accuracy),]
+  num2s <- ddply(subset(testingresults, label == "target"), .(WorkerId), summarise, num2s = sum(middle, na.rm=T))  
+  subject.accuracy <- merge(subject.accuracy, filler.subj.accuracy)
+  subject.accuracy <- merge(subject.accuracy, num2s)
+  subject.accuracy = subject.accuracy[order(subject.accuracy$filler.accuracy),]
+  
+  subject.accuracy$exclude <- ifelse(subject.accuracy$filler.accuracy < 0.7 | subject.accuracy$timeOut > 3 | subject.accuracy$num2s >4 | subject.accuracy$WorkerId %in% manual_excludes, 1, 0)
+  
+  
+  
+  bad.subjects <- subset(subject.accuracy, exclude==1)$WorkerId 
+  
+  
+  #write.csv(subject.accuracy, "subject_accuracy_allbatches.csv")
+  
+  allresults$exclude <- ifelse(allresults$WorkerId %in% bad.subjects, 1, 0) 
+  good.results <- subset(allresults, exclude==0)
+  
+  #write.csv(allresults, "allresults_withexclude.csv", row.names=FALSE)
+  #write.csv(good.results, "goodresults_allbatches.csv", row.names=FALSE)
+  
+  
+  #counts <- ddply(good.results, .(order), summarise, freq = length(unique(WorkerId)))
+  #counts
+  #write.csv(counts, "participant_counts_02-24-20.csv", row.names=F)
+  
+  #unprocessed_data <- subset(unprocessed_data, label != "practice")
+  
+  #get just target data, filter out timeouts
+  #filtered_data <- subset(unprocessed_data, polarity=="pos" | polarity=="neg")
+  
+  #filtered_data$age_group <- as.character(filtered_data$age_group)
+  
+  #add opposite/middle columns
+  #filtered_data$opposite <- ifelse(filtered_data$response_type=="opposite", 1, 0)
+  #filtered_data$middle <- ifelse(filtered_data$response_type=="middle", 1, 0)
+  
+  
+  
+  # accuracy check and exclusion of low-accuracy participants
+  # Accuracy criterion for inclusion in most experiments is 75% total filler accuracy (as there is only one filler condition)
+  # Accuracy criterion for inclusion in conjunction only is either 100% conjunction filler accuracy, or 50% conjunction filler accuracy and 75% total filler accuracy
+  
+  target.accuracy <- ddply(good.results, .(WorkerId, polarity), summarise, target.accuracy=mean(correct, na.rm=TRUE))
+  #filler.accuracy <- ddply(subset(unprocessed_data, label=="filler"), .(WorkerId), summarise, filler.accuracy = mean(correct, na.rm=TRUE))
+  
+  #target.rt <- ddply(subset(filtered_data, responseTime < 9999), .(WorkerId, polarity), summarise, target.rt=mean(responseTime))
+  
+  
+  #al.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, al_sd=sd(correct, na.rm=TRUE), al_accuracy=mean(correct, na.rm=TRUE), numobvs=length(correct))
+  #middle.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, mid_sd=sd(middle, na.rm=TRUE), mid_accuracy=mean(middle, na.rm=TRUE))
+  #opposite.accuracy_new <- ddply(subset(filtered_data, label=="target"), .(age_group, polarity), summarise, opp_sd=sd(opposite, na.rm=TRUE), opp_accuracy=mean(opposite, na.rm=TRUE))
+  
+  
+  #al.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(correct, na.rm=TRUE), numobvs=length())
+  #al.sd <- ddply(al.accuracy, .(age_group, polarity), summarise, al_se=sd(accuracy, na.rm=TRUE)/sqrt(al_sd=sd(accuracy, na.rm=TRUE), al_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  
+  #middle.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(middle, na.rm=TRUE))
+  #middle.sd <- ddply(middle.accuracy, .(age_group, polarity), summarise, mid_sd=sd(accuracy, na.rm=TRUE), mid_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  #opposite.accuracy <- ddply(subset(filtered_data, label=="target"), .(subject, age_group, polarity), summarise, accuracy=mean(opposite, na.rm=TRUE))
+  #opposite.sd <- ddply(opposite.accuracy, .(age_group, polarity), summarise, opp_sd=sd(accuracy, na.rm=TRUE), opp_accuracy=mean(accuracy, na.rm=TRUE))
+  
+  
+  #unprocessed_data <- merge(unprocessed_data, overall.accuracy)
+  #unprocessed_data <- merge(unprocessed_data, filler.accuracy)
+  unprocessed_data <- merge(good.results, target.accuracy)
+  unprocessed_data <- merge(good.results, target.rt)
+  
+  # na.count <- ddply(filtered_data, .(WorkerId), summarise, na.count=sum(is.na(response)))
+  # one.count <- ddply(filtered_data, .(WorkerId), summarise, one.count=sum(response=="1", na.rm=TRUE))
+  # two.count <- ddply(filtered_data, .(WorkerId), summarise, two.count=sum(response=="2", na.rm=TRUE))
+  # three.count <- ddply(filtered_data, .(WorkerId), summarise, three.count=sum(response=="3", na.rm=TRUE))
+  # 
+  # unprocessed_data <- merge(unprocessed_data, one.count)
+  # unprocessed_data <- merge(unprocessed_data, two.count)
+  # unprocessed_data <- merge(unprocessed_data, three.count)
+  # unprocessed_data <- merge(unprocessed_data, na.count)
+  
+  # response type column
+  unprocessed_data$responseType <- ifelse(unprocessed_data$response=="2", "mid", ifelse(unprocessed_data$correct==1, "adultlike", "opposite"))
+  
+  # other measures
+  # log
+  unprocessed_data$logRT = log(unprocessed_data$responseTime)
+  
+  # z score
+  #p.means <- aggregate(unprocessed_data$responseTime, list(WorkerId = unprocessed_data$WorkerId), mean)
+  #colnames(p.means)[2] = "mean"
+  #p.sds <- aggregate(unprocessed_data$responseTime, list(WorkerId = unprocessed_data$WorkerId), sd)
+  #colnames(p.sds)[2] = "sd"
+  #p.data <- merge(p.means, p.sds, by="WorkerId")
+  #unprocessed_data <- merge(unprocessed_data, p.data, by="WorkerId")
+  #unprocessed_data$zScore = (unprocessed_data$responseTime - unprocessed_data$mean)/unprocessed_data$sd
+  #unprocessed_data$mean <- NULL
+  #unprocessed_data$sd <- NULL
+  
+  #percent.yes <- ddply(unprocessed_data, .(subject), summarise, percent.yes=mean(answer))
+  
+  #unprocessed_data <- merge(unprocessed_data, percent.yes)
+  
+  # Exclude bad participants
+  # unprocessed_data$good.acc <- ifelse(unprocessed_data$filler.accuracy >= 0.65, 1, 0)
+  # unprocessed_data$same.answer <- ifelse(unprocessed_data$one.count >= 7 |
+  #                                          unprocessed_data$two.count >= 7 |
+  #                                          unprocessed_data$three.count >= 7 |
+  #                                          unprocessed_data$na.count >= 4, 1, 0)
+  
+  
+  # exclude bad participants
+  #processed_data <- subset(unprocessed_data, good.acc == 1 & same.answer == 0)
+  
+  # insert a column for accuracy for each participant for each condition's accuracy
+  #condition.accuracy <- ddply(processed_data, .(subject, condition), summarise, condition.accuracy=mean(correct))
+  #processed_data <- merge(processed_data, condition.accuracy)
+  
+  
+  return(unprocessed_data)
+}
+
+
+
+clean.adult.data.exp2 <- clean_adult_data_exp2()
+
+```
+
+```{r}
+no_NA_exp2 <- droplevels(subset(clean.adult.data.exp2, !is.na(clean.adult.data.exp2$responseType)))
+
+no_NA_exp2$responseType <- as.factor(no_NA_exp2$responseType)
+
+model_MC_adult_exp2 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = logRT ~ (polarity + responseType)^2,
+                     random = ~ WorkerId + condition,
+                     family = "gaussian",
+                     data = no_NA_exp2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+```{r}
+model_MC_adult_exp2_diag <- lapply(model_MC_adult_exp2, function(m) m$Sol)
+model_MC_adult_exp2_diag <- do.call(mcmc.list, model_MC_adult_exp2_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_exp2_diag, auto.layout=F)
+gelman.diag(model_MC_adult_exp2_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_exp2_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+model_MC_adult_exp2_combined <- bind_mcmc(model_MC_adult_exp2_diag)
+
+adult_exp2_intercept <- model_MC_adult_exp2_combined[, 1]
+adult_exp2_pos <- model_MC_adult_exp2_combined[, 2]
+adult_exp2_mid <- model_MC_adult_exp2_combined[, 3]
+adult_exp2_opp <- model_MC_adult_exp2_combined[, 4]
+adult_exp2_posmid <- model_MC_adult_exp2_combined[, 5]
+adult_exp2_posopp <- model_MC_adult_exp2_combined[, 6]
+
+estimate_exp2 = function(polarity="neg", response_type="adult"){
+  return(adult_exp2_intercept + 
+         (polarity == "pos")*adult_exp2_pos +
+         (response_type == "mid")*adult_exp2_mid +
+         (response_type == "opp")*adult_exp2_opp +
+         (polarity == "pos")*(response_type == "mid")*adult_exp2_posmid +
+         (polarity == "pos")*(response_type == "opp")*adult_exp2_posopp)
+}                    
+```
+
+Modeling response_type
+
+```{r}
+IJ <- (1/3) * (diag(2) + matrix(1,2, 2))
+prior.MC_adult <- list(R = list(V = IJ, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                        G2=list(V        = diag(2),
+                                n        = 2)))
+
+
+model_MC_adult_response_exp2 <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = responseType ~ -1 + trait + trait:polarity,
+                     random = ~ us(trait):WorkerId + us(trait):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     prior=prior.MC_adult,
+                     data = no_NA_exp2,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+```
+
+Running diagnostics on chains
+
+```{r}
+model_MC_adult_response_exp2_diag <- lapply(model_MC_adult_response_exp1, function(m) m$Sol)
+model_MC_adult_response_exp2_diag <- do.call(mcmc.list, model_MC_adult_response_exp2_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_response_exp2_diag, auto.layout=F)
+gelman.diag(model_MC_adult_response_exp2_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_response_exp2_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+model_MC_adult_response_exp2_combined <- bind_mcmc(model_MC_adult_response_exp2_diag)
+
+adult_exp2_response_int <- rescale(model_MC_adult_response_exp2_combined, 1:2)
+
+adult_exp2_response_pos <- rescale(model_MC_adult_response_exp2_combined, 3:4)
+```
+
+Graphs
+
+```{r}
+library(tikzDevice)
+
+
+generateTikzGraph <- function(file, width, height, gg) {
+  tikz(file, width=width, height=height, sanitize=TRUE)
+  print(gg)
+  dev.off()
+}
+
+targ.al.plot.single <- function(indata, title="Adult-like by age group") { 
+  ggplot(indata, aes(x=age_group, y=correct, fill=polarity, color=polarity, width=0.6)) +
+    #stat_summary(fun.y="mean", geom="bar", position=p) +
+    #stat_summary(fun.data="mean_cl_boot", geom="errorbar", size=0.6, width=0.15, position=p) +
+    theme(panel.background=element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank()) +
+    theme(axis.line=element_line(color="black"), axis.text=element_text(color="black"), axis.ticks=element_line(color="black")) +
+    coord_cartesian(ylim=c(0, 1.0)) +
+    scale_x_discrete("Age Group") +
+    scale_y_continuous("% Correct") +
+    ggtitle(title) +
+    theme(plot.title = element_text(hjust = 0.5),
+          panel.background = element_rect(fill = NA)) +
+    geom_point(aes(shape=polarity), size=5, stat="summary", fun.y="mean") +
+    geom_line(aes(group=polarity), stat="summary", fun.y="mean") # +
+   # geom_errorbar(aes(ymin=HPDmin, ymax=HPDmax), width=.1)
+}
+
+no_NA_exp1$story <- revalue(no_NA_exp1$request, c("TCN_justification" = "fill", "TCP_justification" = "fill", "TFN_justification" = "fit", "TFP_justification" = "fit", "TRN_justification" = "reach", "TRP_justification" = "reach", "TWN_justification" = "weight", "TWP_justification" = "weight"))
+
+no_NA_exp1$polarity <- no_NA_exp1$label
+
+targ.al.plot.by_story.adult <- function(indata, title="Adult-like by story type") { 
+  ggplot(indata, aes(x=story, y=correct, fill=polarity, color=polarity, width=0.6)) +
+    #stat_summary(fun.y="mean", geom="bar", position=p) +
+    #stat_summary(fun.data="mean_cl_boot", geom="errorbar", size=0.6, width=0.15, position=p) +
+    theme(panel.background=element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank()) +
+    theme(axis.line=element_line(color="black"), axis.text=element_text(color="black"), axis.ticks=element_line(color="black")) +
+    coord_cartesian(ylim=c(0, 1.0)) +
+    scale_x_discrete("Story type") +
+    scale_y_continuous("% Correct") +
+    ggtitle(title) +
+    theme(plot.title = element_text(hjust = 0.5),
+          panel.background = element_rect(fill = NA)) +
+    geom_bar(size=5, position="dodge", stat="summary", fun.y="mean")
+   # geom_errorbar(aes(ymin=HPDmin, ymax=HPDmax), width=.1)
+}
+
+
+```
+
+Running RealOpp analysis
+
+```{r}
+
+exp1_adult_real_opp <- read.csv("../data/exp1-adult/real_opp.csv", header=TRUE, na.strings="NULL", stringsAsFactors = FALSE)
+
+no_NA_exp1_realopp <- no_NA_exp1
+
+no_NA_exp1_realopp$WorkerId <- as.character(no_NA_exp1_realopp$WorkerId)
+
+no_NA_exp1_realopp <- merge(no_NA_exp1_realopp, exp1_adult_real_opp, by=c("WorkerId", "item"))
+
+no_NA_exp1_realopp$WorkerId <- as.factor(no_NA_exp1_realopp$WorkerId)
+
+levels(no_NA_exp1_realopp$responseType) <- c(levels(no_NA_exp1_realopp$responseType), "realopp")
+
+no_NA_exp1_realopp$responseType[no_NA_exp1_realopp$realopp == 1] <- "realopp"
+
+model_MC_adult_exp1_realopp <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = logRT ~ (label + responseType)^2,
+                     random = ~ WorkerId + request,
+                     family = "gaussian",
+                     data = targ(no_NA_exp1_realopp),
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+IJ_realopp <- (1/3) * (diag(3) + matrix(1,3, 3))
+prior.MC_adult_realopp <- list(R = list(V = IJ_realopp, fix = 1),
+                 G=list(G1=list(V        = diag(3),
+                                n        = 3),
+                 G2=list(V               = diag(3),
+                                n        = 3)))
+
+
+model_MC_adult_response_exp1_realopp <- mclapply(1:4, function(i) {
+MCMCglmm(fixed = responseType ~ -1 + trait + trait:label,
+                     random = ~ us(trait):WorkerId + us(trait):request,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     prior=prior.MC_adult_realopp,
+                     data = no_NA_exp1_realopp,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+
+```
+
+
+```{r}
+model_MC_adult_exp1_realopp_diag <- lapply(model_MC_adult_exp1_realopp, function(m) m$Sol)
+model_MC_adult_exp1_realopp_diag <- do.call(mcmc.list, model_MC_adult_exp1_realopp_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_exp1_realopp_diag, auto.layout=F)
+gelman.diag(model_MC_adult_exp1_realopp_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_exp1_realopp_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+model_MC_adult_exp1_realopp_combined <- bind_mcmc(model_MC_adult_exp1_realopp_diag)
+
+adult_exp1_realopp_intercept <- model_MC_adult_exp1_realopp_combined[, 1]
+adult_exp1_realopp_pos <- model_MC_adult_exp1_realopp_combined[, 2]
+adult_exp1_realopp_mid <- model_MC_adult_exp1_realopp_combined[, 3]
+adult_exp1_realopp_opp <- model_MC_adult_exp1_realopp_combined[, 4]
+adult_exp1_realopp_realopp <- model_MC_adult_exp1_realopp_combined[, 5]
+adult_exp1_realopp_posmid <- model_MC_adult_exp1_realopp_combined[, 6]
+adult_exp1_realopp_posopp <- model_MC_adult_exp1_realopp_combined[, 7]
+adult_exp1_realopp_posrealopp <- model_MC_adult_exp1_realopp_combined[, 8]
+
+
+estimate_exp1_realopp = function(polarity="neg", response_type="adult"){
+  return(exp(adult_exp1_realopp_intercept + 
+         (polarity == "pos")*adult_exp1_realopp_pos +
+         (response_type == "mid")*adult_exp1_realopp_mid +
+         (response_type == "opp")*adult_exp1_realopp_opp +
+         (response_type == "realopp")*adult_exp1_realopp_realopp +
+         (polarity == "pos")*(response_type == "mid")*adult_exp1_realopp_posmid +
+         (polarity == "pos")*(response_type == "opp")*adult_exp1_realopp_posopp +
+         (polarity == "pos")*(response_type == "realopp")*adult_exp1_realopp_posrealopp))
+
+}                    
+```
+
+```{r}
+model_MC_adult_exp1_realopp_response_diag <- lapply(model_MC_adult_response_exp1_realopp, function(m) m$Sol)
+model_MC_adult_exp1_realopp_response_diag <- do.call(mcmc.list, model_MC_adult_exp1_realopp_response_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_exp1_realopp_response_diag, auto.layout=F)
+gelman.diag(model_MC_adult_exp1_realopp_response_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_exp1_realopp_response_diag, ask=F, auto.layout=F)
+```
+
+```{r}
+
+exp2_adult_real_opp <- read.csv("../data/exp2-adult/real_opp.csv", header=TRUE, na.strings="NULL", stringsAsFactors = FALSE)
+
+no_NA_exp2_realopp <- no_NA_exp2
+
+no_NA_exp2_realopp$WorkerId <- as.character(no_NA_exp2_realopp$WorkerId)
+
+no_NA_exp2_realopp <- merge(no_NA_exp2_realopp, exp2_adult_real_opp, by=c("WorkerId", "condition"))
+
+no_NA_exp2_realopp$WorkerId <- as.factor(no_NA_exp2_realopp$WorkerId)
+
+levels(no_NA_exp2_realopp$responseType) <- c(levels(no_NA_exp2_realopp$responseType), "realopp")
+
+no_NA_exp2_realopp$responseType[no_NA_exp2_realopp$realopp == 1] <- "realopp"
+
+
+no_NA_exp2_realopp <- subset(no_NA_exp2_realopp, label=="target")
+
+model_MC_adult_exp2_realopp <- mclapply(1:4, function(i) {
+  MCMCglmm(fixed = logRT ~ (polarity + responseType)^2,
+                     random = ~ WorkerId + condition,
+                     family = "gaussian",
+                     data = no_NA_exp2_realopp,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+IJ_realopp <- (1/3) * (diag(2) + matrix(1,2,2))
+prior.MC_adult_realopp <- list(R = list(V = IJ_realopp, fix = 1),
+                 G=list(G1=list(V        = diag(2),
+                                n        = 2),
+                 G2=list(V               = diag(2),
+                                n        = 2)))
+
+
+no_NA_exp2_realopp$responseType[no_NA_exp2_realopp$responseType == "opposite"] <- "mid"
+
+no_NA_exp2_realopp <- droplevels(no_NA_exp2_realopp)
+
+model_MC_adult_response_exp2_realopp <- mclapply(1:4, function(i) {
+MCMCglmm(fixed = responseType ~ -1 + trait + trait:polarity,
+                     random = ~ us(trait):WorkerId + us(trait):condition,
+                     rcov = ~ us(trait):units,
+                     family = "categorical",
+                     prior=prior.MC_adult_realopp,
+                     data = no_NA_exp2_realopp,
+                     thin = 50,
+                     burnin = 10000,
+                     nitt = 400000,
+                     verbose = FALSE)
+}, mc.cores=4)
+
+
+```
+
+```{r}
+model_MC_adult_exp2_realopp_response_diag <- lapply(model_MC_adult_response_exp2_realopp, function(m) m$Sol)
+model_MC_adult_exp2_realopp_response_diag <- do.call(mcmc.list, model_MC_adult_exp2_realopp_response_diag)
+
+par(mfrow=c(4,2), mar=c(2,2,1,2))
+gelman.plot(model_MC_adult_exp2_realopp_response_diag, auto.layout=F)
+gelman.diag(model_MC_adult_exp2_realopp_response_diag)
+
+par(mfrow=c(2,2), mar=c(2, 1, 1, 1))
+plot(model_MC_adult_exp2_realopp_response_diag, ask=F, auto.layout=F)
+```

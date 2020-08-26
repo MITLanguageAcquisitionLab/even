@@ -1,0 +1,1117 @@
+enterer,entry_date,subject,DOT,DOB,age_group,order,item,label,story,polarity,condition,true_answer,response,correct,response_type,justification,just_type,include
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,one green bow,random,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,almost reach,scale,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink and green,,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,4,target,weight,neg,TWN,3,2,0,middle,try hard to pick up,random,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,large cup matches her,random,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,millie has the purple hat,,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,matches,,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,8,target,fit,pos,TFP,3,1,0,opposite,"sock fit him, but the others had same",scale,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,so small,scale,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,because he's orange,,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,he's blue,random,0
+yadav,2018-01-27,1,2018-01-27,2012-06-13,5,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,has a lot,scale,0
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,littlest,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tall,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,smallest,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,yellow,,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,matches,,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,littlest,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,middle,,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,littlest,scale,1
+yadav,2018-01-27,2,2018-01-27,2013-01-19,5,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,biggest basket,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,1,target,fit,neg,TFN,1,3,0,opposite,big,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,"the others can't, and the big one can't",scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,shell doesn't match,,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,big,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,yellow,,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,big but socks are  small,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,9,target,reach,pos,TRP,1,3,0,opposite,"tall, but can still reach",scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium backpack,,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,1
+yadav,2018-01-27,3,2018-01-27,2012-05-14,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,basket is small,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,i don't know ,none,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,that's the longest,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,shell doesn't match,,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,i don't know he's the big one,none,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,he has the big cup,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,these guys got purple hats,,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,he has the yellow hat,,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,he has the little socks,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,9,target,reach,pos,TRP,1,3,0,opposite,he's the tallest,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,becaues he's the big one,,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,11,target,weight,pos,TWP,1,3,0,opposite,big ears and big pumpkin,scale,1
+yadav,2018-01-27,4,2018-01-27,2013-06-17,4,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,big basket,scale,1
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,1,target,fit,neg,TFN,1,3,0,opposite,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,,none,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,3,filler,sameness,neg,FMN,2,,0,other,don't know,,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,4,target,weight,neg,TWN,3,2,0,middle,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,6,filler,scale,neg,FSN,2,,0,other,points at papa turtle,,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,i like it,,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,9,target,reach,pos,TRP,1,3,0,opposite,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,i like it,,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,11,target,weight,pos,TWP,1,3,0,opposite,i like it,random,0
+yadav,2018-01-27,5,2018-01-27,2014-03-03,3,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,i like it,random,0
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,longest,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,smallest couldn't fit,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,both medium,,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,both yellow,,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,big thought he wouldn't,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,9,target,reach,pos,TRP,1,2,0,middle,medium ,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium ,,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,tiny/small,scale,1
+yadav,2018-01-27,6,2018-01-27,2012-08-16,5,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,has the most,scale,1
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,1,target,fit,pos,TFP,3,2,0,middle,don't know,none,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,2,target,reach,pos,TRP,1,2,0,middle,,none,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,4,target,weight,pos,TWP,1,3,0,opposite,Cause I did,random,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,Just did,random,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,distracted from here,,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,7,filler,sameness,neg,FMN,2,,0,other,,,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,8,target,fit,neg,TFN,1,,0,other,,none,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,9,target,reach,neg,TRN,3,,0,other,,none,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,10,filler,scale,neg,FSN,2,,0,other,,,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,11,target,weight,neg,TWN,3,,0,other,,,0
+yadav,2018-02-05,7,2018-02-03,2013-12-16,4,POS,12,target,capacity,neg,TCN,1,,0,other,,,0
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,1,target,fit,pos,TFP,3,2,0,middle,I want to know which one is Franky,none,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,because i'm trying to think,none,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,matches the chair,,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,because he was able to even though it was heavy,scale,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,5,target,capacity,pos,TCP,3,1,0,opposite,because even though his basket is little he can even fit a lot of acorns in there,scale,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,because those others aren't joey,,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,because shell not matching,,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,because she can't fit,scale,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,because that shelf is high,scale,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,he's the middle,,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,i just knew it,random,1
+yadav,2018-02-05,8,2018-02-03,2012-12-05,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,he's the smallest,scale,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,1,target,fit,pos,TFP,3,3,1,adult-like,because socks,random,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,because apples,random,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,don't know,,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,4,target,weight,pos,TWP,1,3,0,opposite,quiet from here,none,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,6,filler,scale,pos,FSP,2,1,0,opposite,,,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,wrong shell,,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+yadav,2018-02-05,9,2018-02-03,2014-01-17,4,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,1,target,fit,pos,TFP,3,3,1,adult-like,saw it in the first page,random,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,"heard that name, yellow",,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small can't lift big,scale,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,usually that basket can't hold a full basket,scale,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium backpack not big enough for the little one,,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,saw that,,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,small mouses usually can fit,scale,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,long caterpillars usually can reach,scale,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,listening,,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,big rabbits can pick up heavy,scale,1
+yadav,2018-02-05,10,2018-02-03,2013-09-20,4,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,small just needs two marbles to fill it up,scale,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,1,target,fit,pos,TFP,3,2,0,middle,cuz,random,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,2,target,reach,pos,TRP,1,2,0,middle,"cuz, was very unconfident in answers, often would ask experimenter what the correct answer was",random,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,4,target,weight,pos,TWP,1,2,0,middle,?,none,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,Cuz,random,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,waffled a bit between 1 and 3,none,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,10,filler,scale,neg,FSN,2,1,0,opposite,small,,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+yadav,2018-02-05,11,2018-02-03,2013-04-13,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,1,target,fit,pos,TFP,3,2,0,middle,didn't know,none,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,because apples,random,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,don't know,,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,4,target,weight,pos,TWP,1,3,0,opposite,big,scale,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,5,target,capacity,pos,TCP,3,2,0,middle,he got a lot,scale,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,not same,,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,8,target,fit,neg,TFN,1,3,0,opposite,big,scale,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,so long,scale,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,yellow,,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,11,target,weight,neg,TWN,3,1,0,opposite,"too difficult, waffled between 1 and 3",scale,1
+yadav,2018-02-05,12,2018-02-03,2012-08-28,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,"small cup, waffled between 1 and 3",scale,1
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,1,target,fit,pos,TFP,3,2,0,middle,I don't know,none,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,I don't know,none,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,matches him,,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,played eenie meenie minie mo to figure it out - still didn't understand,none,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,bc that's sammy,random,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,bc joey,,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,that's him,,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,that's him,random,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,9,target,reach,neg,TRN,3,1,0,opposite,that one is right,random,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,10,filler,scale,neg,FSN,2,3,0,opposite,,,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,11,target,weight,neg,TWN,3,,0,other,,none,0
+J,2018-02-11,14,2018-02-10,2012-11-01,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,0
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,1,target,fit,pos,TFP,3,1,0,opposite,bc he's the littlest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,bs he's the smallest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,wearing yellow hat,,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,bc he's the smallest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,bc he's the biggest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,bc he's the medium one ,,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,bc he has a different colored shell,,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,bc she's the smallest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,bc its th eiggest,scale,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,yellow hat,,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+J,2018-02-11,15,2018-02-10,2013-06-17,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,bc its the biggest,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,bc,random,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,2,target,reach,pos,TRP,1,3,0,opposite,she knew,random,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,bc,,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,bc he's little,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,bc i found out,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,6,filler,scale,pos,FSP,2,3,0,opposite,bc the other one's are smaller,,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,bc they don't match,,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,the littlest bc its little,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,9,target,reach,neg,TRN,3,1,0,opposite,bc its so little little,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,bc theyre both middle,,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,11,target,weight,neg,TWN,3,1,0,opposite,bc its so tiny,scale,1
+J,2018-02-11,16,2018-02-10,2012-04-18,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,bc its little,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,bc he's the biggest,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,bc its rare that someone tiny can reach a tree,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,bc he said he wanted to go to the chair that matched his hat,,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,bc its rare that a tiny thing can lift a big thing,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,5,target,capacity,pos,TCP,3,1,0,opposite,bc there's so much acorns,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,bc she asked to wrap the medium,,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,bc the others match but not him,,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,"bc mary is the littlest, its rare that tiny things can't fit ",scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,its rare a big thing can't reach big,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,bc this one has yellow,,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,bc big ones are usually strong,scale,1
+J,2018-02-11,17,2018-02-10,2011-05-22,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,bc usually tiny stuff can fit to reach mearbles,scale,1
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,1,target,fit,pos,TFP,3,2,0,middle,bc those socks,random,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,2,target,reach,pos,TRP,1,2,0,middle,I saw which apple,random,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,bc yellow chair,,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,4,target,weight,pos,TWP,1,3,0,opposite,from huge pumpkin,scale,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,from this big basket,scale,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,6,filler,scale,pos,FSP,2,3,0,opposite,from that big one,,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,7,filler,sameness,neg,FMN,2,3,0,opposite,"from the blue, favorite color",,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,little bow,random,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,from that book not really big body,random,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,10,filler,scale,neg,FSN,2,3,0,opposite,from that big hat,,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,from the big ball,random,0
+J,2018-02-11,18,2018-02-10,2012-12-28,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,"from the blue cut, my fav",random,0
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,bc he's big,scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,2,target,reach,pos,TRP,1,2,0,middle,?,none,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,cuz yellow,,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,bc remember size,scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,5,target,capacity,pos,TCP,3,2,0,middle,bc size,scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,6,filler,scale,pos,FSP,2,3,0,opposite,bc size,,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,green bucket and pink shell,,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,bc size that thing is even smaller,scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,bc size,scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,"she is the middle middle hat, yellow",,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,11,target,weight,neg,TWN,3,1,0,opposite,"bc size, ""why is it the big one?"", waffled between 1 and 3",scale,1
+J,2018-02-11,19,2018-02-10,2012-10-18,5,POS,12,target,capacity,neg,TCN,1,2,0,middle,bc color,random,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,1,target,fit,neg,TFN,1,3/1,0,other,i dont know,none,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,kind of long,scale,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink shell,,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,she is kinda big,scale,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,5,target,capacity,neg,TCN,1,2,0,middle,green and black,random,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,she is close to yellow,,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,he has that hat its yellow,,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,he's big,scale,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,9,target,reach,pos,TRP,1,2,0,middle,this size,scale,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,10,filler,scale,pos,FSP,2,2/1,0,other,she looks like jelly,,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,11,target,weight,pos,TWP,1,3,0,opposite,the trunk is this big,scale,1
+J,2018-02-17,20,2018-02-17,2014-03-10,3,NEG,12,target,capacity,pos,TCP,3,2,0,middle,she looks like sammy,random,1
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,seashell doesn't match,,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,she is the smallest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,yellow one,,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,hat is yellow,,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,shortest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium sized one,,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,0
+J,2018-02-17,21,2018-02-17,2009-08-20,8,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,biggest basket and biggest squirrel,scale,0
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,little one,scale,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,green bucket,,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,4,target,weight,neg,TWN,3,2,0,middle,purple,random,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,5,target,capacity,neg,TCN,1,2,0,middle,greenest,random,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,6,filler,scale,neg,FSN,2,3,0,opposite,reddest,,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,8,target,fit,pos,TFP,3,2,0,middle,blackest,random,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,9,target,reach,pos,TRP,1,2,0,middle,brownest,random,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,littlest,scale,1
+J,2018-02-17,22,2018-02-17,2013-11-26,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,littlest basket,scale,1
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,look at that!,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,I saw it,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,look at that!,,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,looked,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,5,target,capacity,neg,TCN,1,2,0,middle,figured it out,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,figured it out,,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,figured it out,,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,figured it out,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,9,target,reach,pos,TRP,1,2,0,middle,figured it out,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,10,filler,scale,pos,FSP,2,1/2,0,other,i dont know,,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,11,target,weight,pos,TWP,1,3,0,opposite,figured it out,random,0
+J,2018-02-17,23,2018-02-17,2012-12-29,5,NEG,12,target,capacity,pos,TCP,3,2,0,middle,figured it out,random,0
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,longest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,didn't match,,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,small enough to fit,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,middle sized hat,,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,shortest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium sized,,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,smallest and they are less lightest,scale,1
+J,2018-02-17,24,2018-02-17,2012-05-03,5,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,biggest basket,scale,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,bc,random,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,bc he's small,scale,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,bc,,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,bc,random,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,5,target,capacity,pos,TCP,3,2,0,middle,bc,random,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,bc medium,,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,"small, hole is small",scale,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,big can reach,scale,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+J,2018-02-24,25,2018-02-24,2012-02-18,6,POS,12,target,capacity,neg,TCN,1,3,0,opposite,she's big,scale,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,1,target,fit,pos,TFP,3,1,0,opposite,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,6,filler,scale,pos,FSP,2,1,0,opposite,,,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,no green shell,,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,9,target,reach,neg,TRN,3,1,0,opposite,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,11,target,weight,neg,TWN,3,1,0,opposite,,none,1
+J,2018-02-24,26,2018-02-24,2012-11-08,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,1
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,1,target,fit,pos,TFP,3,1,0,opposite,,none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,6,filler,scale,pos,FSP,2,,0,other,,,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,7,filler,sameness,neg,FMN,2,1,0,opposite,,,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,8,target,fit,neg,TFN,1,1/2,0,other,"*pointed to one, we asked why and she replied by pointing to 2*",none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,9,target,reach,neg,TRN,3,1/2,0,other,"*pointed to one, we asked why and she replied by pointing to 2*",none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,10,filler,scale,neg,FSN,2,1/2,0,other,"*pointed to one, we asked why and she replied by pointing to 2*",,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,11,target,weight,neg,TWN,3,1,0,opposite,,none,0
+J,2018-02-24,27,2018-02-24,2014-09-12,3,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,1,target,fit,pos,TFP,3,2,0,middle,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,2,target,reach,pos,TRP,1,2,0,middle,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,5,target,capacity,pos,TCP,3,2,0,middle,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,6,filler,scale,pos,FSP,2,,0,other,,,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,7,filler,sameness,neg,FMN,2,1,0,opposite,,,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,9,target,reach,neg,TRN,3,2,0,middle,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,11,target,weight,neg,TWN,3,2,0,middle,,none,0
+J,2018-02-24,28,2018-02-24,2014-11-26,3,POS,12,target,capacity,neg,TCN,1,2,0,middle,,none,0
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,don't know,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,don't know,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,5,target,capacity,pos,TCP,3,,0,other,don't know,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,pink,,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,8,target,fit,neg,TFN,1,,0,other,don't know,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,yellow hat,,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+J,2018-02-24,29,2018-02-24,2012-01-12,6,POS,12,target,capacity,neg,TCN,1,,0,other,don't know,none,1
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,1,target,fit,neg,TFN,1,2,0,middle,penguin in the middle ,random,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,2,target,reach,neg,TRN,3,2,0,middle,all in the middle,random,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,4,target,weight,neg,TWN,3,2,0,middle,all in the middle,random,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,5,target,capacity,neg,TCN,1,2,0,middle,,none,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,looks like a girl,,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,looks li,,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,cuz its big,scale,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,9,target,reach,pos,TRP,1,3,0,opposite,i chose one there (small) and there's another (big),scale,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,10,filler,scale,pos,FSP,2,1,0,opposite,cuz its small and backpack is small,,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,cuz he's little,scale,0
+yadav,2018-03-05,30,2018-02-27,2013-01-22,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,cuz he's little,scale,0
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,1,target,fit,neg,TFN,1,2,0,middle,,none,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,2,target,reach,neg,TRN,3,1,0,opposite,,none,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,4,target,weight,neg,TWN,3,2,0,middle,,none,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,5,target,capacity,neg,TCN,1,2,0,middle,idk i'm only strong enough,none,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,6,filler,scale,neg,FSN,2,,0,other,?,,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,idk she's a turtle,,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,he is big + super old,scale,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,9,target,reach,pos,TRP,1,2,0,middle,"bc idk ""he can"" little one can't",random,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,11,target,weight,pos,TWP,1,2,0,middle,idk why,none,1
+yadav,2018-03-05,31,2018-02-27,2015-01-31,3,NEG,12,target,capacity,pos,TCP,3,2,0,middle,idk,none,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,it fits,scale,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,3,filler,sameness,neg,FMN,2,3,0,opposite,it matched,,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,its strong,scale,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,she's bigger,scale,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,"""3""",,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,"""he's 2""",random,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,9,target,reach,pos,TRP,1,3,0,opposite,"he can reach the apple, little one can't",scale,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,11,target,weight,pos,TWP,1,3,0,opposite,idk,none,1
+yadav,2018-03-05,32,2018-02-27,2014-07-15,3,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,idk,none,1
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,idk,none,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,2,target,reach,neg,TRN,3,1,0,opposite,idk who mary is,none,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,*laughs*,,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,"doesn't quite know, looks at us for the answer",none,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,*laughs*,none,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,"doesn't quite know, looks at us for the answer",,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,7,filler,sameness,pos,FMP,2,1,0,opposite,"doesn't quite know, looks at us for the answer",,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,8,target,fit,pos,TFP,3,1,0,opposite,always small,,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,10,filler,scale,pos,FSP,2,0,0,other,did not complete,,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,11,target,weight,pos,TWP,1,0,0,other,did not complete,,0
+J,2018-02-17,33,2018-03-10,2013-03-03,5,NEG,12,target,capacity,pos,TCP,3,0,0,other,did not complete,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,1,target,fit,neg,TFN,1,3,0,opposite,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,2,target,reach,neg,TRN,3,2,0,middle,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,4,target,weight,neg,TWN,3,1,0,opposite,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,9,target,reach,pos,TRP,1,2,0,middle,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,10,filler,scale,pos,FSP,2,1,0,opposite,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,cause it just is,,0
+J,2018-02-17,34,2018-03-10,2014-03-10,4,NEG,12,target,capacity,pos,TCP,3,2,0,middle,cause it just is,,0
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,the smallest,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,bc the biggest,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,bc it doesn't match,,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,bc its big,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,cause its big,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,cause he doesn't have purple,,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,cause it has a yellow party hat,,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,cause its little,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,cause its small,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,10,filler,scale,pos,FSP,2,1,0,opposite,cause its small,,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,cause its small,scale,1
+J,2018-02-17,35,2018-03-10,2014-03-10,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,cause its small,scale,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,1,target,fit,neg,TFN,1,,0,other,i forget,none,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,cause i listened to the story,random,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,bc i knew what kind of seashell match so i just know,,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,bc i know that the heavy even,scale,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,bc she can't reach it amd she doesn't have arms,scale,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,cause doesn't match and i know her,,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,bc which chair matches hat,,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,idk,none,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,idk,none,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium and meidum,,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,its big and he's little,scale,1
+J,2018-02-17,36,2018-03-10,2014-03-10,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,idk i paid attention,random,1
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,1,target,fit,pos,TFP,3,2,0,middle,"mother was inadvertently feeding answers, should exclude",,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,3,filler,sameness,pos,FMP,2,1,0,opposite,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,4,target,weight,pos,TWP,1,2,0,middle,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,5,target,capacity,pos,TCP,3,2,0,middle,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,8,target,fit,neg,TFN,1,2,0,middle,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,9,target,reach,neg,TRN,3,2,0,middle,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,10,filler,scale,neg,FSN,2,3,0,opposite,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,,0
+yadav,2018-03-15,37,2018-03-14,2015-03-18,2,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,,0
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,"biggest, socks small",scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,super small,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,"yellow, matches hat",,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,he's so small,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,his is so huge,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,6,filler,scale,pos,FSP,2,1,0,opposite,he has a little backpack,,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,shell doesn't match,,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,mary so small,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,so big,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium sized,,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,so big,scale,1
+yadav,2018-03-15,38,2018-03-14,2011-06-28,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,so small,scale,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,big feet,scale,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,shorter,scale,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,5,target,capacity,pos,TCP,3,,0,other,idk,none,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium sized,,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,shell does not match his basket,,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,little,scale,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,b/c i knew,random,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,b/c she's medium,,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,i knew she was,random,1
+yadav,2018-03-15,39,2018-03-14,2012-06-20,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,she is small,scale,1
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,1,target,fit,pos,TFP,3,3,1,adult-like,idk,none,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,2,target,reach,pos,TRP,1,2,0,middle,idk,none,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,b/c,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,4,target,weight,pos,TWP,1,3,0,opposite,idk,none,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,idk,none,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,6,filler,scale,pos,FSP,2,,0,other,idk,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,7,filler,sameness,neg,FMN,2,3,0,opposite,idk,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,8,target,fit,neg,TFN,1,2,0,middle,b/c,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,9,target,reach,neg,TRN,3,2,0,middle,b/c,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,10,filler,scale,neg,FSN,2,3,0,opposite,b/c,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,11,target,weight,neg,TWN,3,2,0,middle,b/c,,0
+yadav,2018-03-15,40,2018-03-14,2015-01-19,3,POS,12,target,capacity,neg,TCN,1,3,0,opposite,b/c,,0
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,1,target,fit,pos,TFP,3,2,0,middle,all the middle ones are right,random,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,2,target,reach,pos,TRP,1,2,0,middle,all the middle ones are right,random,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,all the middle ones are right,,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,4,target,weight,pos,TWP,1,2,0,middle,all the middle ones are right,random,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,5,target,capacity,pos,TCP,3,2,0,middle,all the middle ones are right,random,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,6,filler,scale,pos,FSP,2,3,0,opposite,you pointed to the backpack,,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't have same color,,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,"smallest, he wants to fit in there, he can't",scale,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,"because her is biggest, that big",scale,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,because yellow hat bought by dad,,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,he can't hold them and he was the biggest,scale,1
+yadav,2018-03-15,41,2018-03-14,2013-04-20,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,"he has the biggest arms, can't reach them (marbles)",scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,1,target,fit,pos,TFP,3,1,0,opposite,small socks,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,2,target,reach,pos,TRP,1,3,0,opposite,big bear,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,i looked at the yellow,,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,4,target,weight,pos,TWP,1,3,0,opposite,i looked at the big one,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,big basket,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,looked at the middle blue guy,,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,looked at green basket,,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,8,target,fit,neg,TFN,1,3,0,opposite,looked at big mouse,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,9,target,reach,neg,TRN,3,1,0,opposite,because she's the small one,scale,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,middle hat is yellow,,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,11,target,weight,neg,TWN,3,1,0,opposite,look at pink bunny ,random,1
+yadav,2018-03-15,42,2018-03-14,2011-12-15,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,she has small legs,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,franky big,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,"benny looked at it, just knew",random,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,3,filler,sameness,pos,FMP,2,,0,other,yellow hat,,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,rufus is small,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,5,target,capacity,pos,TCP,3,1,0,opposite,even though he has a small basket he can fill it up,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium-medium,,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,green pink no match,,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,small even though can't fit in hole,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,really long,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,color match,,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,really big,scale,1
+yadav,2018-03-15,43,2018-03-14,2011-06-08,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,frida is small but the couch is still low,scale,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+yadav,2018-03-20,44,2018-03-20,2014-01-27,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,2,target,reach,neg,TRN,3,2,0,middle,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,3,filler,sameness,neg,FMN,2,3,0,opposite,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,4,target,weight,neg,TWN,3,2,0,middle,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,6,filler,scale,neg,FSN,2,3,0,opposite,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,8,target,fit,pos,TFP,3,1,0,opposite,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,9,target,reach,pos,TRP,1,2,0,middle,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,just knew,none,0
+yadav,2018-03-20,45,2018-03-20,2014-08-05,3,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,just knew,none,0
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,2,target,reach,neg,TRN,3,,0,other,,none,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,none,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,so big,scale,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,5,target,capacity,neg,TCN,1,3,0,opposite,i don't know,none,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,so little,,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,he had a yellow hat on,,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,8,target,fit,pos,TFP,3,1,0,opposite,so little,scale,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,so little,scale,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,idk,,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,so little,scale,1
+yadav,2018-03-20,46,2018-03-20,2014-06-17,3,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,so little that he didn't carry everything and he can't carry everything in his basket,scale,1
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,2,target,reach,neg,TRN,3,1,0,opposite,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,4,target,weight,neg,TWN,3,1,0,opposite,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,5,target,capacity,neg,TCN,3,2,0,middle,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,"(pointed and said ""the big one"") just knew it",scale,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,9,target,reach,pos,TRP,1,3,0,opposite,"(pointed and said ""the big one"") just knew it",scale,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,11,target,weight,pos,TWP,1,3,0,opposite,just knew it,none,0
+yadav,2018-03-20,47,2018-03-20,2014-07-30,3,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,just knew it,none,0
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,she's little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,2,target,reach,neg,TRN,3,1,0,opposite,she's little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,medium,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,4,target,weight,neg,TWN,3,1,0,opposite,little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,5,target,capacity,neg,TCN,1,1,1,adult-like,that frog is little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,turtle is little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,wearing a yellow hat,none,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,8,target,fit,pos,TFP,3,1,0,opposite,he's little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,he's little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,that elephant is little,scale,1
+yadav,2018-03-20,48,2018-03-20,2014-07-03,3,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,little,scale,1
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,we have two sisters,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,2,target,reach,neg,TRN,3,2,0,middle,big medium small,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,4,target,weight,neg,TWN,3,2,0,middle,because it can't hold it,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,5,target,capacity,neg,TCN,1,2,0,middle,cuz the black cup,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,6,filler,scale,neg,FSN,2,3,0,opposite,just know,,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,it has yellow,,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,8,target,fit,pos,TFP,3,2,0,middle,points to socks,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,9,target,reach,pos,TRP,1,2,0,middle,point to tree,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,10,filler,scale,pos,FSP,2,1,0,opposite,it has little ears,random,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,little,scale,0
+yadav,2018-03-20,49,2018-03-20,2012-12-31,5,NEG,12,target,capacity,pos,TCP,3,2,0,middle,medium,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,small can fit in hole,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,2,target,reach,neg,TRN,3,,0,other,idk,none,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,that one is small,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,4,target,weight,neg,TWN,3,,0,other,maybe in different picture,random,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,5,target,capacity,neg,TCN,1,,0,other,idk,none,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,it's small,,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,he had a yellow hat on,,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,8,target,fit,pos,TFP,3,1,0,opposite,small can fit in hole,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,small can fit in hole,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,small can fit in hole,scale,0
+yadav,2018-03-20,50,2018-03-20,2014-12-03,3,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,"small, they can't even reach those ones",scale,0
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,it wouldn't fit,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,it's' tall but  still couldn't reach,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,none,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,she's bigger but still can't pick it up,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,it's little but still can't fill it,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,none,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,none,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,they looked small but,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,he was able to reach it,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,10,filler,scale,pos,FSP,2,,0,other,,none,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,he's little but was able to lift it,scale,1
+M,2018-08-01,57,2018-07-12,2012-03-18,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,he has the smallest basket but was able to fill it,scale,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,1,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,2,target,reach,pos,TRP,1,3,0,opposite,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,7,filler,sameness,neg,FMN,2,3,0,opposite,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,8,target,fit,neg,TFN,1,3,0,opposite,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,10,filler,scale,neg,FSN,2,1,0,opposite,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,58,2018-07-12,2015-06-04,3,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,she's the biggest,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,none,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,she's the biggest,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,the little one,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,none,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,none,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,the biggest,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,the littlest,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,the medium one,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,the little one,scale,1
+M,2018-08-01,59,2018-07-12,2011-08-29,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,the little one,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,1,target,fit,neg,TFN,1,3,0,opposite,so big,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,so big,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,not the same,,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,less strong,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,don't know,none,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,yellow hat,,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,feet are big,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,so small,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,so little,scale,1
+M,2018-08-01,60,2018-07-12,2013-06-29,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,basket is full,scale,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,the longest,scale,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,"""couldn't even get under counch""",scale,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,"littlest ""can't even reach it""",scale,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium one,,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-01,61,2018-07-16,2013-05-13,5,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,1,target,fit,pos,TFP,3,3,1,adult-like,big,scale,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,teeny,scale,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,big,scale,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+M,2018-08-01,62,2018-07-16,2013-10-24,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,smallest,scale,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,8,target,fit,pos,TFP,3,1,0,opposite,smallest,scale,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-01,63,2018-07-16,2011-08-17,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,littlest,scale,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,like the mice,random,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,orange,,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,like mouse,random,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,like other stories,random,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,same,random,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,same,random,1
+M,2018-08-01,64,2018-07-19,2012-05-04,6,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,opposite as marbles,scale,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,so big,scale,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,,none,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,8,target,fit,pos,TFP,3,1,0,opposite,small,scale,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,he's so small,scale,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,big backpack,,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,he's little,scale,1
+M,2018-08-01,65,2018-07-19,2011-09-20,6,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,it's big,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,1,target,fit,pos,TFP,3,3,1,adult-like,big,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,2,target,reach,pos,TRP,1,3,0,opposite,big,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,5,target,capacity,pos,TCP,3,2,0,middle,medium,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,8,target,fit,neg,TFN,1,2,0,middle,medium,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,big,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium,,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+M,2018-08-01,66,2018-07-19,2014-05-07,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,big,scale,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,1,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,2,target,reach,pos,TRP,1,3,0,opposite,,none,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow one,,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,baby,scale,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,5,target,capacity,pos,TCP,3,1,0,opposite,just did,random,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,8,target,fit,neg,TFN,1,3,0,opposite,,none,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,10,filler,scale,neg,FSN,2,1,0,opposite,,,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,67,2018-07-23,2014-08-27,3,POS,12,target,capacity,neg,TCN,1,2,0,middle,,none,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,middle,,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,8,target,fit,pos,TFP,3,1,0,opposite,small,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,small,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+M,2018-08-01,68,2018-07-23,2013-07-10,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,small,scale,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,1,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,2,target,reach,pos,TRP,1,2,0,middle,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,4,target,weight,pos,TWP,1,2,0,middle,roof,random,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,5,target,capacity,pos,TCP,3,2,0,middle,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,6,filler,scale,pos,FSP,2,3,0,opposite,,,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,7,filler,sameness,neg,FMN,2,3,0,opposite,,,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,8,target,fit,neg,TFN,1,3,0,opposite,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,10,filler,scale,neg,FSN,2,1,0,opposite,,,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,69,2018-07-23,2013-11-29,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,"littlest ""even""",scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink and green,,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest so strongest,scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,"littlest cup, least marbles",scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,"medium hat, medium turtle",,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,"littlest, hard time",scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,littlest,scale,1
+M,2018-08-01,70,2018-07-23,2012-04-14,6,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,biggest basket maybe not enough,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,only one whose shell doesn't match,,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,smallest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,medium one,,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-01,71,2018-07-23,2012-01-07,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,littlest one with littlest basket,scale,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,1,target,fit,pos,TFP,3,2,0,middle,,none,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,2,target,reach,pos,TRP,1,3,0,opposite,,none,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,4,target,weight,pos,TWP,1,3,0,opposite,can lift everything,scale,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,huge bag,scale,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,6,filler,scale,pos,FSP,2,3,0,opposite,,,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,7,filler,sameness,neg,FMN,2,3,0,opposite,,,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,dig holes?,random,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,"long, can reach books",scale,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,10,filler,scale,neg,FSN,2,3,0,opposite,,,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,lift things,scale,1
+M,2018-08-01,72,2018-07-24,2014-04-01,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,can reach things,scale,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,1,target,fit,pos,TFP,3,2,0,middle,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,73,2018-07-24,2014-05-17,4,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,2,target,reach,neg,TRN,3,2,0,middle,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,3,filler,sameness,neg,FMN,2,3,0,opposite,,,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,4,target,weight,neg,TWN,3,1,0,opposite,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,7,filler,sameness,pos,FMP,2,3,0,opposite,,,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,11,target,weight,pos,TWP,1,3,0,opposite,,none,1
+M,2018-08-01,74,2018-07-26,2013-01-24,5,NEG,12,target,capacity,pos,TCP,3,2,0,middle,,none,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,small,scale,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,big basket,scale,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,9,target,reach,pos,TRP,1,3,0,opposite,don't know,none,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-01,75,2018-07-30,2012-01-24,6,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,basket so big,scale,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,1,target,fit,pos,TFP,3,2,0,middle,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,4,target,weight,pos,TWP,1,2,0,middle,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,5,target,capacity,pos,TCP,3,2,0,middle,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,7,filler,sameness,neg,FMN,2,,0,other,,,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,8,target,fit,neg,TFN,1,3,0,opposite,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,9,target,reach,neg,TRN,3,2,0,middle,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,11,target,weight,neg,TWN,3,2,0,middle,,none,1
+M,2018-08-10,76,2018-08-02,2014-09-23,3,POS,12,target,capacity,neg,TCN,1,2,0,middle,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,1,target,fit,pos,TFP,3,2,0,middle,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,2,target,reach,pos,TRP,1,2,0,middle,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,6,filler,scale,pos,FSP,2,1,0,opposite,,,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,7,filler,sameness,neg,FMN,2,1,0,opposite,,,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,8,target,fit,neg,TFN,1,2,0,middle,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,9,target,reach,neg,TRN,3,2,0,middle,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,10,filler,scale,neg,FSN,2,3,0,opposite,,,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-10,77,2018-08-02,2015-04-17,3,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,1,target,fit,neg,TFN,1,3,0,opposite,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,5,target,capacity,neg,TCN,3,2,0,middle,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,6,filler,scale,neg,FSN,2,3,0,opposite,,,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-10,78,2018-08-02,2014-06-23,4,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,,none,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,5,target,capacity,pos,TCP,3,1,0,opposite,smallest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,yellow,,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,79,2018-08-06,2013-01-10,5,POS,12,target,capacity,neg,TCN,1,3,0,opposite,biggest,scale,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,1,target,fit,pos,TFP,3,1,0,opposite,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,4,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,5,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,8,target,fit,neg,TFN,1,1,1,adult-like,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+M,2018-08-10,80,2018-08-06,2013-09-21,4,POS,12,target,capacity,neg,TCN,1,3,0,opposite,,none,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,little looks smallest,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,can't reach,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,small,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,middle hat,,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow chair,,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,big feet,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,"small ""of course [big] can reach""",scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,10,filler,scale,pos,FSP,2,3,0,opposite,big,,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+M,2018-08-10,81,2018-08-07,2013-04-03,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,smallest basket,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,medium hat,,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,8,target,fit,pos,TFP,3,1,0,opposite,smallest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,82,2018-08-07,2013-04-22,5,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,2,target,reach,pos,TRP,1,3,0,opposite,,none,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,biggest basket,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,don't match,,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,littlest,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,tallest,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium hat,,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,83,2018-08-07,2012-05-01,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,littlest,scale,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,1,target,fit,neg,TFN,1,2,0,middle,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,2,target,reach,neg,TRN,3,1,0,opposite,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,3,filler,sameness,neg,FMN,2,1,0,opposite,,,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,4,target,weight,neg,TWN,3,1,0,opposite,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,5,target,capacity,neg,TCN,3,2,0,middle,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,6,filler,scale,neg,FSN,2,1,0,opposite,,,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,7,filler,sameness,pos,FMP,2,1,0,opposite,,,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,10,filler,scale,pos,FSP,2,1,0,opposite,,,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,,none,1
+M,2018-08-10,84,2018-08-07,2013-11-05,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,1,target,fit,pos,TFP,3,3,1,adult-like,big socks,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,2,target,reach,pos,TRP,1,1,1,adult-like,little tree,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,4,target,weight,pos,TWP,1,1,1,adult-like,little,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,big one,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,green bucket,,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,8,target,fit,neg,TFN,1,2,0,middle,couldn't fit,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,9,target,reach,neg,TRN,3,1,0,opposite,coudn't reach,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,favorite color's purple,,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,11,target,weight,neg,TWN,3,1,0,opposite,couldn't reach,scale,1
+M,2018-08-10,85,2018-08-07,2015-02-24,3,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,couldn't fill up cup,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,littlest,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,2,target,reach,neg,TRN,3,2,0,middle,medium,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink and green,,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,4,target,weight,neg,TWN,3,"2,3",0,other,"don't know, both big",scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,medium,,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,,none,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,little,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,baby big one,scale,1
+M,2018-08-10,86,2018-08-07,2014-05-07,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,little,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,big one,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink shell,,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big one,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,5,target,capacity,neg,TCN,3,2,0,middle,medium,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,big one,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,big one,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,blue,,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,little,scale,1
+A ,2018-08-12,87,2018-08-09,2013-11-13,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,small,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,1,target,fit,pos,TFP,3,1,0,opposite,already small,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,so small,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small people can't even pick up a heavy pumpkin,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,5,target,capacity,pos,TCP,3,1,0,opposite,small one,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium backpack,,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,pink and green,,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,8,target,fit,neg,TFN,1,3,0,opposite,biggest,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,largest,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium,,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+A ,2018-08-12,88,2018-08-09,2012-06-03,6,POS,12,target,capacity,neg,TCN,1,3,0,opposite,biggest,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,1,target,fit,neg,TFN,1,3,0,opposite,big,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,2,target,reach,neg,TRN,3,1,0,opposite,small,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,pink shell,,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,big,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,middle,,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,wearing socks,random,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,9,target,reach,pos,TRP,1,3,0,opposite,big,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,blue,,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,11,target,weight,pos,TWP,1,3,0,opposite,big,scale,1
+A ,2018-08-12,89,2018-08-09,2014-05-07,4,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,big,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,big,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,2,target,reach,pos,TRP,1,1,1,adult-like,,none,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,he has a big basket,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,he's medium,,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,different colors,,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,small can't fit,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,she's tall,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium,,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,she's big,scale,1
+A ,2018-08-12,90,2018-08-09,2013-03-21,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,small cup,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,feet are big,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,small,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,5,target,capacity,pos,TCP,3,3,1,adult-like,big basket,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,size,scale,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+A ,2018-08-12,91,2018-08-09,2012-03-08,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,,none,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,"""even though they didn't have.."" biggest",scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,shortest,scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,"pumpkins are huge ""even though Rufus""",random,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,5,target,capacity,pos,TCP,3,1,0,opposite,"tiniest basket, fuller first",scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium one,,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,pink doesn't match green,,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,tiniest,scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,"tallest one ""even she couldn't""",scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,medium one,,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,biggest must be strongest,scale,1
+M,2018-08-15,92,2018-08-13,2011-11-25,6,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,smallest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,shell,,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,biggest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,6,filler,scale,neg,FSN,2,3,0,opposite,biggest,,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,yellow chair,,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,smallest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,littlest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,mediumest,,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,littlest,scale,1
+M,2018-08-10,93,2018-08-13,2014-02-01,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,smallest,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,1,target,fit,pos,TFP,3,3,1,adult-like,"big, might not fit into socks",scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,2,target,reach,pos,TRP,1,3,0,opposite,small,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow hat,,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,small,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,5,target,capacity,pos,TCP,3,1,0,opposite,small,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,pink shell green bucket,,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,small,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,9,target,reach,neg,TRN,3,3,1,adult-like,big,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,the hat looks like it would fit her,,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,11,target,weight,neg,TWN,3,3,1,adult-like,she's big,scale,1
+M,2018-08-15,94,2018-08-13,2013-05-12,5,POS,12,target,capacity,neg,TCN,1,1,1,adult-like,it's small,scale,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,1,target,fit,neg,TFN,1,,0,other,I don't know,none,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,,none,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,,none,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,5,target,capacity,neg,TCN,3,2,0,middle,,none,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,,,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,"socks are small, he's big",scale,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,"he's small, the tree is tall",scale,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,,,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,he's small pumpkin is big,scale,1
+Leo,2018-08-23,95,2018-08-21,2012-02-06,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,"basket is small, nuts are big",scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,little and can't even,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,tall,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,biggest,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,5,target,capacity,neg,TCN,3,1,0,opposite,little one,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,6,filler,scale,neg,FSN,2,,0,other,not sure,none,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,,,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,big feet,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,little one,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,little one,scale,1
+Leo,2018-08-23,96,2018-08-21,2012-08-01,6,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,,none,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,littlest,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,big and on that side,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,doesn't match,,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,big hat,,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,changed answer from 3,,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,8,target,fit,pos,TFP,3,1,0,opposite,little,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,little,scale,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,he's medium (changed answer from 1 after saying the pink one was the medium one),,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,he has a big pumpkin,random,1
+Leo,2018-08-23,97,2018-08-21,2014-03-05,4,NEG,12,target,capacity,pos,TCP,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,1,target,fit,pos,TFP,3,3,1,adult-like,,none,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,2,target,reach,pos,TRP,1,1,1,adult-like,littlest & can still get it,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,4,target,weight,pos,TWP,1,1,1,adult-like,littlest & can still get it,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,5,target,capacity,pos,TCP,3,1,0,opposite,little & it can fill up a ton of them,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,green and pink,,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,8,target,fit,neg,TFN,1,1,1,adult-like,little & still can't,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,9,target,reach,neg,TRN,3,3,1,adult-like,tall but still can't reach,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,10,filler,scale,neg,FSN,2,2,1,adult-like,middle,,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,11,target,weight,neg,TWN,3,3,1,adult-like,so big but still can't,scale,1
+Leo,2018-08-23,98,2018-08-21,2012-01-25,6,POS,12,target,capacity,neg,TCN,1,3,0,opposite,big cup but still can't,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,1,target,fit,pos,TFP,3,2,0,middle,medium socks,random,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,2,target,reach,pos,TRP,1,2,0,middle,same height as the tree,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,3,filler,sameness,pos,FMP,2,2,1,adult-like,yellow,,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,4,target,weight,pos,TWP,1,1,1,adult-like,little and strong,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,5,target,capacity,pos,TCP,3,2,0,middle,medium & basket,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,6,filler,scale,pos,FSP,2,2,1,adult-like,because it's blue,,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,7,filler,sameness,neg,FMN,2,2,1,adult-like,not matching,,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,8,target,fit,neg,TFN,1,1,1,adult-like,little hole,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,9,target,reach,neg,TRN,3,2,0,middle,,none,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,10,filler,scale,neg,FSN,2,3,0,opposite,standing next to the yellow hat,,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,11,target,weight,neg,TWN,3,1,0,opposite,small & the bowling ball is big,scale,1
+Leo,2018-08-23,99,2018-08-21,2012-12-16,5,POS,12,target,capacity,neg,TCN,1,2,0,middle,medium cup & medium size,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,1,target,fit,neg,TFN,1,1,1,adult-like,small,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,2,target,reach,neg,TRN,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,3,filler,sameness,neg,FMN,2,2,1,adult-like,,,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,4,target,weight,neg,TWN,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,5,target,capacity,neg,TCN,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,6,filler,scale,neg,FSN,2,2,1,adult-like,medium,,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,7,filler,sameness,pos,FMP,2,2,1,adult-like,medium yellow chair & yellow hat,,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,8,target,fit,pos,TFP,3,3,1,adult-like,big,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,9,target,reach,pos,TRP,1,1,1,adult-like,little,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,10,filler,scale,pos,FSP,2,2,1,adult-like,medium,,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,11,target,weight,pos,TWP,1,1,1,adult-like,little,scale,1
+Leo,2018-08-23,100,2018-08-21,2013-08-31,4,NEG,12,target,capacity,pos,TCP,3,1,0,opposite,little,scale,1
